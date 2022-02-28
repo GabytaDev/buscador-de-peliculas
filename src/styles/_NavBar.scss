@@ -1,0 +1,27 @@
+@import "./variables";
+
+.content-nav{
+    padding: 20px;
+    color: $color-text-principal;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    .content-icons,ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            color: $color-text-principal;
+            margin: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .navbar-link{
+            color: $color-text-principal;
+            
+        }
+        .navbar-link:hover{
+            color: $color-text-enfasis;
+        }
+    }
+}
