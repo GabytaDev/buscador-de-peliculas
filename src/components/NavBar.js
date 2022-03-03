@@ -3,7 +3,7 @@ import { FiHome } from 'react-icons/fi';
 import { BsCameraVideo } from 'react-icons/bs';
 import { FiMonitor } from 'react-icons/fi';
 import Busqueda from './Busqueda';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const NavBar = () => {
