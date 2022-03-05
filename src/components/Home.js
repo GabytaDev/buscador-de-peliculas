@@ -4,11 +4,12 @@ import "../styles/_ContainerCard.scss";
 import PopularMovie from "./PopularMovie";
 
 
-const Home = ()=>{
+const Home = ()=> {
 
     return (
         <section className="container-card">
-           <PopularMovie/>
+           <PopularMovie
+           titulo="Peliculas Populares"/>
         </section>
     )
 }
