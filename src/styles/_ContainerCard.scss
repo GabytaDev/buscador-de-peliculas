@@ -18,21 +18,16 @@
     }
 }
 
-
 .contenedor-listado{
-    display: flex;
+    @include flex-centrar ($direccion:column, $content:flex-start);
     padding: 10px;
-    flex-direction: column; 
-    align-items: flex-start;
     background-color: $main-color;
    
     .listado{
+        @include flex-centrar ($direccion: row,$content:space-between);
         text-decoration: none;
-        display: flex;
-        justify-content: space-between;
         color: $color-text-listados;
         padding: 5px;
-        align-items: center;
         width: 100%;
         
         .item-listado{
