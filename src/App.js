@@ -8,7 +8,7 @@ import RedireccionBusqueda from "./components/RedireccionBusqueda"
 import Home from "./components/Home";
 import Movie from "./components/Movie";
 import Tv from "./components/Tv";
-import PopularMovie from './components/PopularMovie';
+import MoviesHome from './components/MoviesHome';
 const App = ()=>{
   return (
     <div>
@@ -21,7 +21,7 @@ const App = ()=>{
         <Route path="/" element={<Home/>} />
         {/* <Route path="/movie" element={<Movie/>}/> */}
         {/* navbar pelis --> peliculas populares */}
-        <Route path="movie/:popular/page/:numpage" element={<PopularMovie/>}/>
+        <Route path="movie/:popular/page/:numpage" element={<MoviesHome/>}/>
         <Route path="/tv" element={<Tv/>}/>
  {/* 
          {/*home --> peliculas tendencias  

@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { IoIosArrowDroprightCircle as Flecha } from "react-icons/io";
 
 
-const PopularMovie = ({titulo}) => {
+const MoviesHome = ({titulo, url}) => {
 
     const [peliculasPopulares, setPeliculasPopulares] = useState([])
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=90d7b1e3c47854073e093a7f557291b5&language=es-AR&page=1`)
+        fetch(`https://api.themoviedb.org/3/movie/${url}?api_key=90d7b1e3c47854073e093a7f557291b5&language=es-AR&page=1`)
             .then(res => res.json())
             .then(data => setPeliculasPopulares(data.results))
     }, [])
@@ -34,4 +34,4 @@ const PopularMovie = ({titulo}) => {
         </div>
     )
 }
-export default PopularMovie;
+export default MoviesHome;
