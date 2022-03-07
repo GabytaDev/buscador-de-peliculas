@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-//https://api.themoviedb.org/3/movie/550?api_key=90d7b1e3c47854073e093a7f557291b5
 import { Link } from "react-router-dom";
 import { IoIosArrowDroprightCircle as Flecha } from "react-icons/io";
 
@@ -19,13 +18,12 @@ const SeriesHome = ({titulo, url})=>{
                     <Link  to={`/tv/${serie.id}`} key={serie.id} className="listado">
                         <ul className="listado-ul">
                             <li className="item-listado">
-                                <img src={`https://image.tmdb.org/t/p/w200/${serie.poster_path}`} className="contenedor-imagen-listado"></img>
+                                <img src={`https://image.tmdb.org/t/p/w200/${serie.poster_path}`} className="contenedor-imagen-listado" alt="poster serie"></img>
                                 <p>{serie.original_name}</p>  
                             </li>    
                         </ul>
                         <Flecha className="icono-flecha-detalle"/>
                     </Link>
-                    
                 ))}
                 
             </div>

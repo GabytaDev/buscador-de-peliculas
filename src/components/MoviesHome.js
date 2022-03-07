@@ -21,7 +21,7 @@ const MoviesHome = ({titulo, url}) => {
                     <Link  to={`/movie/${pelicula.id}`} key={pelicula.id} className="listado">
                         <ul className="listado-ul">
                             <li className="item-listado">
-                                <img src={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`} className="contenedor-imagen-listado"></img>
+                                <img src={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`} className="contenedor-imagen-listado" alt="poster pelicula"></img>
                                 <p>{pelicula.original_title}</p>  
                             </li>    
                         </ul>
