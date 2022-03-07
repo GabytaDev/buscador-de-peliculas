@@ -4,7 +4,7 @@ import "../styles/_MoviesHome.scss";
 import "../styles/_Home.scss";
 import "../styles/_mixins.scss"
 import MoviesHome from "./MoviesHome";
-
+import SeriesHome from "./SeriesHome"
 
 const Home = () => {
 
@@ -22,6 +22,18 @@ const Home = () => {
                 <section className="container-card">
                     <MoviesHome
                         titulo="Peliculas Mejor Puntuadas"
+                        url="top_rated" />
+                </section>
+            </div>
+            <div className="container-general">
+                <section className="container-card">
+                    <SeriesHome
+                        titulo="Series Populares"
+                        url="popular" />
+                </section>
+                <section className="container-card">
+                    <SeriesHome
+                        titulo="Series Mejor Puntuadas"
                         url="top_rated" />
                 </section>
             </div>
