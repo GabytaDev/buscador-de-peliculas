@@ -1,7 +1,6 @@
 @import "./variables";
 
 .input-style{
-  
     border-radius: 5px;
     padding: 10px;
     border: 1px solid;
@@ -16,7 +15,9 @@
     cursor: pointer;
     background-color: $third-color;
     font-weight: bold;
+    color: $color-text-principal;
 }
 .btn-search-style:hover{
-    background-color: $fourth-color;
+    background-color: $color-text-enfasis;
+    color: $color-text-secundario;
 }
