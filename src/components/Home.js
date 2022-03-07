@@ -6,20 +6,25 @@ import "../styles/_mixins.scss"
 import MoviesHome from "./MoviesHome";
 
 
-const Home = ()=> {
+const Home = () => {
 
     return (
-        <div className="container-general">
-        <section className="container-card">
-           <MoviesHome
-           titulo="Peliculas Populares"
-           url="popular"/>
-        </section>
-        <section className="container-card">
-           <MoviesHome
-           titulo="Peliculas Mejor Puntuadas"
-           url="top_rated"/>
-        </section>
+        <div>
+            <section className="container-carrousel">
+                <h2>Carrousel</h2>
+            </section>
+            <div className="container-general">
+                <section className="container-card">
+                    <MoviesHome
+                        titulo="Peliculas Populares"
+                        url="popular" />
+                </section>
+                <section className="container-card">
+                    <MoviesHome
+                        titulo="Peliculas Mejor Puntuadas"
+                        url="top_rated" />
+                </section>
+            </div>
         </div>
     )
 }

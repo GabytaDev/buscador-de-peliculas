@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    // background-color: rgb(84, 84, 102);
     font-family:"Roboto";
     background: linear-gradient(to bottom right, $main-color, $secondary-color, $third-color, $fourth-color);  
     height: 100vh;
+    color: rgb(42, 42, 42);
 }
 ul,li{
     list-style: none;
