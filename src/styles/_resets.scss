@@ -5,9 +5,9 @@
 }
 body{
     font-family:"Roboto";
-    background: linear-gradient(to bottom right, $main-color, $secondary-color, $third-color, $fourth-color);  
+    background: $background-main;
     height: 100vh;
-    color: rgb(42, 42, 42);
+    color: $color-text-principal;
 }
 ul,li{
     list-style: none;
