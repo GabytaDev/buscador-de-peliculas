@@ -11,13 +11,12 @@ const MoviesHome = () => {
                     titulo="Peliculas Populares"
                     url="popular"
                 />
-
             </div>
-
             <div className="box-container">
                 <ListadoMovies
-                    titulo="Peliculas Mejor Puntuadas"
-                    url="top_rated" />
+                    titulo="Próximos lanzamientos"
+                    url="upcoming" 
+                />
             </div>
         </div>
 

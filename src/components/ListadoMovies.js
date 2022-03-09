@@ -4,18 +4,18 @@ import { IoIosArrowDroprightCircle as Flecha } from "react-icons/io";
 import { useState, useEffect } from "react";
 
 const ListadoMovies = ({titulo,url})=>{
-    const [peliculasPopulares, setPeliculasPopulares] = useState([])
+    const [listaPeliculas, setListaPeliculas] = useState([])
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/${url}?api_key=90d7b1e3c47854073e093a7f557291b5&language=es-AR&page=1`)
+        fetch(`https://api.themoviedb.org/3/movie/${url}?api_key=90d7b1e3c47854073e093a7f557291b5&language=es-ES`)
             .then(res => res.json())
-            .then(data => setPeliculasPopulares(data.results))
+            .then(data => setListaPeliculas(data.results))
     }, [])
 
     return (
         <div>
             <h2 className="titulo-container">{titulo}</h2>
             <div className="contenedor-listado">
-                {peliculasPopulares.map(pelicula => (
+                {listaPeliculas.map(pelicula => (
                     <Link  to={`/movie/${pelicula.id}`} key={pelicula.id} className="listado">
                         <ul className="listado-ul">
                             <li className="item-listado">
