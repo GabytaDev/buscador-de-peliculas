@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 const Movie = () => {
     const params = useParams()
     const [peliculas, setPeliculas] = useState([])
+
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${params.idPelicula}?api_key=90d7b1e3c47854073e093a7f557291b5&language=es-ES`)
             .then(res => res.json())
@@ -25,12 +26,12 @@ const Movie = () => {
                     <p>Información General {peliculas.overview}</p>
                     <p>Duración: {peliculas.runtime} min</p>
                     <p>Presupuesto: {peliculas.budget}</p>
-                    <div>Géneros:
-                        {peliculas.genres.map(genero=>(
-                            <p>{genero.name}</p>
-                        ))}
-                    </div>
-                            
+                    <p>Géneros: 
+                    {peliculas.genres?.map(genero => (
+                            <ul>
+                                <li>{genero.name}</li>
+                            </ul>))}
+                    </p>
                     
                 </article>
             </section>
