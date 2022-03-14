@@ -1,6 +1,2 @@
-@import "./mixins";
 
-.container-general{
-   @include flex-centrar($direccion: row, $content: center)
 
-}

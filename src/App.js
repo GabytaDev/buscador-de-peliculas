@@ -19,9 +19,10 @@ const App = ()=>{
         <Route path="/busqueda" element={<Busqueda/>}/>
         <Route path="buscar/:resultado" element={<RedireccionBusqueda/>}/>
         <Route path="/" element={<Home/>} />
-        {/* <Route path="/movie" element={<Movie/>}/> */}
-        {/* navbar pelis --> peliculas populares */}
         <Route path="movie/:popular/page/:numpage" element={<MoviesHome/>}/>
+        <Route path="/movie/:idPelicula" element={<Movie/>}/>
+        {/* navbar pelis --> peliculas populares */}
+        
         <Route path="/tv" element={<Tv/>}/>
  {/* 
          {/*home --> peliculas tendencias  

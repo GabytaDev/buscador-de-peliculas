@@ -1,0 +1,44 @@
+@import "./mixins";
+@import "./variables";
+.container-background-movie{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-size:cover;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .img-fondo{
+        width: 100%;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        filter:brightness(0.5)
+    }
+}
+.container-movie{
+    @include flex-centrar($direccion: row, $content: center);
+    // background-color: $third-color;
+    padding: 40px;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+    .content-img{
+        display: flex;
+        margin: 0;
+    }
+    .content-info-movie{
+        width: 500px;
+       padding: 0 20px;
+       .title-movie{
+           @include title-detalle;
+       }
+       .text-detalle{
+           @include subtitle-detalle ($fontSize: 18px);
+       }
+       .subtitle-movie{
+           @include subtitle-detalle ($fontSize: 20px, $fontWeight:500);
+       }
+    }
+    
+}

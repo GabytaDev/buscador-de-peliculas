@@ -4,3 +4,15 @@
     justify-content: $content;
     align-items: $content;
 }
+
+@mixin title-detalle {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 26px;
+}
+
+@mixin subtitle-detalle($fontSize: 20px, $fontWeight:300){
+    font-size: $fontSize;
+    font-weight:$fontWeight;
+    margin: 0 0 5px;
+}

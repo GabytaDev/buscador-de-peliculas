@@ -1,6 +1,9 @@
 @import "./variables";
 @import "./mixins";
-
+.container-general{
+    @include flex-centrar($direccion: row, $content: center)
+ 
+ }
 .box-container{
     display: flex;
     flex-direction: column;
@@ -10,41 +13,4 @@
     margin: 20px;
     border-radius: 5px;
     overflow: hidden;
-    
-    .titulo-container{
-        padding: 10px;
-        display: flex;
-        background-color: $third-color;
-        justify-content: center; 
-    }
-}
-
-.contenedor-listado{
-    @include flex-centrar ($direccion:column, $content:flex-start);
-    padding: 10px;
-    background-color: $main-color;
-   
-    .listado{
-        @include flex-centrar ($direccion: row,$content:space-between);
-        text-decoration: none;
-        color: $color-text-listados;
-        padding: 5px;
-        width: 100%;
-        
-        .item-listado{
-            display: flex;
-            
-        }
-       .contenedor-imagen-listado{
-           width: 44px;
-           height: 44px;
-           border-radius: 50%;
-           margin-right: 5px;
-       }
-    }
-}
-
-.icono-flecha-detalle{
-    color: $color-text-principal;
-    font-size: 40px;
 }
