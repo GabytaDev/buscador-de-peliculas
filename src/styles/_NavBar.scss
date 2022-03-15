@@ -35,23 +35,15 @@
         align-items: center;
         
         .content-icons,ul{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 100%;
+            justify-content: space-around;
+            position: fixed;
+            z-index: 2;
+            bottom: 0px;
+            left: 0px;
+            background-color: $color-text-enfasis;
+            padding: 5px 0px;
             
-            li{
-                color: $color-text-principal;
-                margin: 10px;
-                font-size: 30px;
-                cursor: pointer;
-            }
-            .navbar-link{
-                color: $color-text-secundario;
-                
-            }
-            .navbar-link:hover{
-                color: $background-enfasis;
-            }
         }
     }
 }
