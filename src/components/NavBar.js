@@ -15,8 +15,9 @@ const NavBar = () => {
                     <li> <NavLink className='navbar-link' to="/movie"> <BsCameraVideo /></NavLink></li>
                     <li> <NavLink className='navbar-link' to="/tv"><FiMonitor /></NavLink> </li>
                 </ul>
-                <Busqueda/>  
+                
             </nav>
+            <Busqueda/>  
         </header>
     )
 }

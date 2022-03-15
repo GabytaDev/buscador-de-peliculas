@@ -25,3 +25,25 @@
         }
     }
 }
+
+@media (max-width:500px){
+    .content-nav{
+        padding: 20px;
+        color: $color-text-principal;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        
+        .content-icons,ul{
+            width: 100%;
+            justify-content: space-around;
+            position: fixed;
+            z-index: 2;
+            bottom: 0px;
+            left: 0px;
+            background-color: $color-text-enfasis;
+            padding: 5px 0px;
+            
+        }
+    }
+}
