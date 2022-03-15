@@ -5,8 +5,8 @@
     align-items: $content;
 }
 
-@mixin title-detalle {
-    font-size: 32px;
+@mixin title-detalle ($fontSizeTitle: 32px) {
+    font-size: $fontSizeTitle;
     font-weight: 500;
     margin: 0 0 26px;
 }
