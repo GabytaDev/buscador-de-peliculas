@@ -13,4 +13,33 @@
     margin: 20px;
     border-radius: 5px;
     overflow: hidden;
+    overflow: scroll;
+}
+@media (max-width:900px) {
+ .container-general{
+     max-width: 900px;
+     .box-container{
+        width: 100%;
+     }
+ }   
+}
+@media (max-width:500px) {
+    .container-general{
+        @include flex-centrar($direccion: row, $content: center);
+        max-width: 500px;
+     }
+    .box-container{
+        width: 100%;
+    }  
+}
+
+@media (min-width: 375px) and (max-width:490px) {
+    .container-general{
+        @include flex-centrar($direccion: row, $content: center);
+        
+    }
+    .box-container{
+       
+        width: 100%;
+    }   
 }

@@ -23,6 +23,7 @@
         .item-listado{
             display: flex;
             
+            
         }
        .contenedor-imagen-listado{
            width: 44px;
@@ -36,4 +37,34 @@
 .icono-flecha-detalle{
     color: $color-text-principal;
     font-size: 40px;
+}
+
+@media (max-width:500px) {
+    .titulo-container{
+        @include title-detalle ($fontSizeTitle: 20px);
+        margin: 0;
+    }
+    .contenedor-listado{
+       padding: 5px;
+        .listado{
+            @include subtitle-detalle($fontSize: 16px);
+            
+            .item-listado{
+                display: flex;
+                p{
+                    font-size: 10px;
+                }
+            }
+           .contenedor-imagen-listado{
+               width: 20px;
+               height: 20px;
+               border-radius: 50%;
+               margin-right: 5px;
+           }
+        }
+    }
+    .icono-flecha-detalle{
+        color: $color-text-principal;
+        font-size: 20px;
+    }
 }
