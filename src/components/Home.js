@@ -4,7 +4,7 @@ import "../styles/_MoviesHome.scss";
 import "../styles/_Home.scss";
 import "../styles/_mixins.scss";
 import MoviesHome from "./MoviesHome";
-import SeriesHome from "./SeriesHome"
+import SeriesHome from "./SeriesHome";
 
 const Home = () => {
 
@@ -13,26 +13,17 @@ const Home = () => {
             <section className="container-carrousel">
                 <h2>Carrousel</h2>
             </section>
+
             <div className="container-general">
                 <section >
-                    <MoviesHome   
-                     />
+                    <MoviesHome/>
                 </section>
                 
             </div>
-
-
             <div className="container-general">
-                <section >
-                    <SeriesHome
-                        titulo="Series Populares"
-                        url="popular" />
-                </section>
-                <section className="container-card">
-                    <SeriesHome
-                        titulo="Series Mejor Puntuadas"
-                        url="top_rated" />
-                </section>
+                <section>
+                    <SeriesHome/>        
+                </section> 
             </div>
         </div>
     )
