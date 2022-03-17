@@ -10,6 +10,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: auto;
         li{
             color: $color-text-principal;
             margin: 10px;
@@ -25,7 +26,12 @@
         }
     }
 }
-
+@media (min-width: 600px) and (max-width:900px) {
+    .content-nav{
+     width: 100%;
+      
+    }  
+}
 @media (max-width:500px){
     .content-nav{
         padding: 20px;
