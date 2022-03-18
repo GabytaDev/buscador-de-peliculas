@@ -1,0 +1,62 @@
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.container-carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+    width: auto;
+    margin-bottom: 20px;
+    .container-imagen{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        
+        .imagen-slider{ 
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .container-info-pelicula{
+            @include flex-centrar($direccion: column, $content: center);
+            width: 330px;
+            height: 100%;
+            position: absolute;
+            top:0;
+            z-index: 100;
+            background-color: $color-text-enfasis;
+            opacity: .9;
+            padding: 30px;
+
+            .info-pelicula{
+                @include flex-centrar($direccion: column, $content: center);
+                text-align: center;
+                width: auto;
+               .title-movie{
+                    @include title-detalle($fontSizeTitle:30px);
+                    margin: 0 0 5px;
+               }
+               .detalle-pelicula{
+                @include subtitle-detalle($fontSize: 20px, $fontWeight:300)
+               }
+               .link-info-detalle-pelicula{
+                border: none;
+                padding: 8px;
+                border-radius: 5px;
+                background-color: $background-main;
+                color: $background-enfasis;
+               } 
+            }
+        }
+
+    }
+   
+}
+
