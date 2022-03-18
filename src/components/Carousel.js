@@ -10,24 +10,35 @@ const Carousel = () => {
             .then(res => res.json())
             .then(data => setImagenes(data.results))
         console.log("data carousel", imagenes)
+        console.log(imagenes.title)
     }, [])
-    
+
     return (
         <div className="container-carousel">
             <Slider
                 dots={true}
                 autoplay={false}
-                
+                dotsClass='slick-dots'
             >
-          
-             {imagenes.map(imagen => (
-                 <div key={imagen.id} className="container-imagen">
-                     <h3>{imagen.tittle}</h3>
-                     <img src={`https://image.tmdb.org/t/p/original/${imagen.poster_path}`}
-                      alt={imagen.tittle} className="imagen-slider"></img>
-                 </div>
-             ))}   
-               
+
+
+                {imagenes.map(imagen => (
+                    <div key={imagen.id} className="container-imagen">
+                       
+                        <img src={`https://image.tmdb.org/t/p/original/${imagen.backdrop_path}`}
+                            alt="poster pelicula" className="imagen-slider">
+                        </img>
+                        <div className="container-info-pelicula">
+                            <div className="info-pelicula">
+                            <h3>{imagen.title}</h3>
+                            <p>{imagen.overview}</p>
+                            <a href={`https://api.themoviedb.org/3/movie/${imagen.id}`}> ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                ))}
+
             </Slider>
         </div>
     );
