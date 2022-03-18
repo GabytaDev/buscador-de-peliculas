@@ -44,7 +44,7 @@
                     margin: 0 0 5px;
                }
                .detalle-pelicula{
-                @include subtitle-detalle($fontSize: 20px, $fontWeight:300)
+                @include subtitle-detalle($fontSize: 1.1em, $fontWeight:300)
                }
                .link-info-detalle-pelicula{
                 border: none;
@@ -58,5 +58,69 @@
 
     }
    
+}
+
+@media (min-width:700px) and (max-width:900px) {
+   
+.container-carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    .container-imagen{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        
+        .imagen-slider{ 
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .container-info-pelicula{
+            @include flex-centrar($direccion: column, $content: center);
+            width: 330px;
+            height: auto;
+            position: absolute;
+            top:0;
+            z-index: 100;
+            background-color: $color-text-enfasis;
+            opacity: .9;
+            padding: 30px;
+
+            .info-pelicula{
+                @include flex-centrar($direccion: column, $content: center);
+                text-align: center;
+                width: auto;
+                height: auto;
+               .title-movie{
+                    @include title-detalle($fontSizeTitle:1.2em);
+                    margin: 0 0 5px;
+               }
+               .detalle-pelicula{
+                @include subtitle-detalle($fontSize: 1em, $fontWeight:100);
+                display: flex;
+                height:auto;
+               }
+               .link-info-detalle-pelicula{
+                border: none;
+                padding: 8px;
+                border-radius: 5px;
+                background-color: $background-main;
+                color: $background-enfasis;
+               } 
+            }
+        }
+
+    }
+   
+} 
 }
 
