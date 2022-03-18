@@ -17,7 +17,7 @@ const Busqueda = () => {
         <div>
             <form onSubmit={handleSubmit} className="form-submit">
                <label><input type="text" onChange={handleChange} className="input-style"></input></label> 
-               <label><input type="submit" value="Buscar" className="btn-search-style"></input></label> 
+               <label><input type="submit" value="Buscar" className="btn-style"></input></label> 
             </form>
         </div>
     )

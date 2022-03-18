@@ -1,5 +1,7 @@
 import "../styles/_Carousel.scss";
+import "../styles/_Busqueda.scss";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import React from "react";
 import Slider from "react-slick";
 
@@ -30,9 +32,11 @@ const Carousel = () => {
                         </img>
                         <div className="container-info-pelicula">
                             <div className="info-pelicula">
-                            <h3>{imagen.title}</h3>
-                            <p>{imagen.overview}</p>
-                            <a href={`https://api.themoviedb.org/3/movie/${imagen.id}`}> ver mas</a>
+                            <h3 className="title-movie">{imagen.title}</h3>
+                            <p className="detalle-pelicula">{imagen.overview}</p>
+                            <Link to={`/movie/${imagen.id}`} >
+                                <button className="btn-style">Ver Mas</button> </Link>
+                            
                             </div>
                         </div>
                     </div>

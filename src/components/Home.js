@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <div>
-            <section className="container-carousel">
+            <section>
                 <Carousel/>
             </section>
 
