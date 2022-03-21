@@ -68,6 +68,7 @@
         height: 100%;
         .container-info-pelicula{
             height: 100%;
+            padding: 30px;
             .info-pelicula{
                height: auto;
                .title-movie{
@@ -95,10 +96,6 @@
         .imagen-slider{ 
             width: 100%;
             height: 100%;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            overflow: hidden;
         }
         .container-info-pelicula{
             width: 220px;
@@ -127,3 +124,40 @@
 } 
 }
 
+@media (min-width: 320px) and (max-width:490px) {
+         
+.container-carousel{
+    height: auto;
+    margin-bottom: 30px;
+    .container-imagen{
+        height: 100%;
+        .imagen-slider{ 
+            width: 100%;
+            height: 100%;
+        }
+        .container-info-pelicula{
+            width: 220px;
+            height: 100%;
+            padding: 12px;
+            .info-pelicula{
+                height: auto;
+               .title-movie{
+                    @include title-detalle($fontSizeTitle:1em);
+                    margin: 0 0 5px;
+               }
+               .detalle-pelicula{
+                @include subtitle-detalle($fontSize: 0.5em);
+                display: flex;
+                height:100%;
+               }  
+            }
+            .btn-style{
+                font-size: 0.5em;   
+            }
+        }
+    } 
+    .slick-dots{
+        bottom:auto;
+    }
+}  
+}
