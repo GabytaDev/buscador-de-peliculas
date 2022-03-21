@@ -1,5 +1,5 @@
 import "../styles/_Carousel.scss";
-import "../styles/_Busqueda.scss";
+import "../styles/_Busqueda.scss"; 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import React from "react";
@@ -11,8 +11,6 @@ const Carousel = () => {
         fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=90d7b1e3c47854073e093a7f557291b5&language=es-ES&page=1`)
             .then(res => res.json())
             .then(data => setImagenes(data.results))
-        console.log("data carousel", imagenes)
-        console.log(imagenes.title)
     }, [])
 
     return (
@@ -20,7 +18,7 @@ const Carousel = () => {
             <Slider
                 dots={true}
                 autoplay={false}
-                dotsClass='slick-dots'
+                
             >
 
 
