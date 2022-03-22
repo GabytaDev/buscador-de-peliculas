@@ -1,14 +1,14 @@
 import "../styles/_Movie.scss";
+import {urlBase, apiKey} from "../utils/Variables" 
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-const Movie = () => {
+const MovieDetalle = () => {
     const params = useParams()
     const [peliculas, setPeliculas] = useState([])
    
-
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/${params.idPelicula}?api_key=90d7b1e3c47854073e093a7f557291b5&language=es-ES`)
+        fetch(`${urlBase}/movie/${params.idPelicula}?${apiKey}&language=es-ES`)
             .then(res => res.json())
             .then(data => setPeliculas(data))
             
@@ -40,7 +40,7 @@ const Movie = () => {
                     
                     <h4 className="subtitle-movie">Géneros:</h4>
                     <div className="text-detalle">
-                    {peliculas.genres?.map(genero => (
+                    {peliculas?.genres?.map(genero => (
                         <span key={genero.id}>{genero.name}, </span>
                     ))}
                     </div>
@@ -50,4 +50,4 @@ const Movie = () => {
         </div>
     )
 }
-export default Movie;
+export default MovieDetalle;

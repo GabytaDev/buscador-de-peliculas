@@ -6,12 +6,12 @@ import { useSearchParams } from "react-router-dom"
 // y va en pares de clave=valor
 // ?name=rick&status=alive
 
-
-
 const RedireccionBusqueda = ()=>{
 
     return (
-        <div></div>
+        <div>
+            {/*pasar id para mostar el componente detalle pelicula */}
+        </div>
     )
 }
 export default RedireccionBusqueda;
