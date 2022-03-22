@@ -15,15 +15,15 @@ const ListadoMovies = ({titulo, peliculas})=>{
                     <Link  to={`/movie/${pelicula.id}`} key={pelicula.id} className="listado">
                         <ul className="listado-ul">
                             <li className="item-listado">
-                                <img src= {`${pelicula.poster_path} 
+                                {/* <img src= {`${pelicula.poster_path} 
                                 ? https://image.tmdb.org/t/p/w200/${pelicula.poster_path} 
                                 : ${< ImgNotfound/>} `} 
                                 className="contenedor-imagen-listado" 
-                                alt="poster pelicula"></img>
+                                alt="poster pelicula"></img> */}
 
-                                {/* <img src= {`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
+                                <img src= {`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
                                  className="contenedor-imagen-listado"
-                                 alt="poster pelicula"></img> */}
+                                 alt="poster pelicula"></img>
 
                                 <p>{pelicula.original_title}</p>  
                             </li>    

@@ -13,11 +13,13 @@ const ListadoSeries = ({titulo, peliculas}) => {
                         <Link to={`/tv/${serie.id}`} key={serie.id} className="listado">
                             <ul className="listado-ul">
                                 <li className="item-listado">
-                                     <img src= {`${serie.poster_path} ? https://image.tmdb.org/t/p/w200/${serie.poster_path} 
+                                     {/* <img className="contenedor-imagen-listado" src= {`${serie.poster_path} 
+                                     ? https://image.tmdb.org/t/p/w200/${serie.poster_path} 
                                      : ${<ImgNotfound className="contenedor-imagen-not-found"/>}`} 
-                                     alt="poster pelicula"></img>
+                                    ></img> */}
                                    
-                                    {/* <img src={`https://image.tmdb.org/t/p/w200/${serie.poster_path}`} className="contenedor-imagen-listado" alt="poster serie"></img> */}
+                                    <img src={`https://image.tmdb.org/t/p/w200/${serie.poster_path}`}
+                                     className="contenedor-imagen-listado" alt="poster serie"></img>
                                     <p>{serie.name}</p>
                                 </li>
                             </ul>
