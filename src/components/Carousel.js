@@ -6,7 +6,7 @@ import React from "react";
 import Slider from "react-slick";
 
 const Carousel = () => {
-    const {peliculas} = useFetchMovies("movie", "now_playing");
+    const {peliculas} = useFetchMovies("movie", "now_playing", );
 
     return (
         <div className="container-carousel">

@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
-import { urlBase, apiKey, search } from "../utils/Variables";
+import { urlBase, apiKey, search, queryLenguaje,queryPagina } from "../utils/Variables";
 import { Link, useParams } from "react-router-dom"
-
 import "../styles/_ResultadoBusqueda.scss"
+
 const ResultadoBusqueda = () => {
   const [resultados, setResultados] = useState([]);
   const params = useParams()
 
   useEffect(() => {
-    //agregar hook para tv  y agregar page al hok y variables
-    fetch(`${urlBase}${search}/movie?${apiKey}&query=${params.resultado}&language=es-ES`)
+    fetch(`${urlBase}${search}/multi?${apiKey}${queryLenguaje}${queryPagina}1&query=${params.resultado}`)
       .then(res => res.json())
       .then(data => {
         setResultados(data.results)
@@ -18,14 +17,12 @@ const ResultadoBusqueda = () => {
 
   }, [params])
 
-  console.log(resultados)
-
   return (
     <div className="container">
       <h2 className="titulo">Resultado de la Busqueda</h2>
       <div className="container-cards">
         {resultados.map(resultado => (
-          //agregar tv
+          //agregar card que reciba media_type
           <Link to={`/movie/${resultado.id}`} key={resultado.id} className="card">
             
               <p className="text-detalle">{resultado.title}</p>
