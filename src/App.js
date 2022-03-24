@@ -4,9 +4,9 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter,Routes, Route  } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Busqueda from "./components/Busqueda";
-import RedireccionBusqueda from "./components/RedireccionBusqueda"
+import ResultadoBusqueda from "./components/ResultadoBusqueda"
 import Home from "./components/Home";
-import Movie from "./components/Movie";
+import MovieDetalle from "./components/MovieDetalle";
 import Tv from "./components/Tv";
 import MoviesHome from './components/MoviesHome';
 const App = ()=>{
@@ -17,10 +17,10 @@ const App = ()=>{
 
       <Routes>
         <Route path="/busqueda" element={<Busqueda/>}/>
-        <Route path="buscar/:resultado" element={<RedireccionBusqueda/>}/>
+        <Route path="buscar/:resultado" element={<ResultadoBusqueda/>}/>
         <Route path="/" element={<Home/>} />
         <Route path="movie/:popular/page/:numpage" element={<MoviesHome/>}/>
-        <Route path="/movie/:idPelicula" element={<Movie/>}/>
+        <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
         {/* navbar pelis --> peliculas populares */}
         
         <Route path="/tv" element={<Tv/>}/>
