@@ -9,7 +9,7 @@ import Home from "./components/Home";
 import MovieDetalle from "./components/MovieDetalle";
 import Card from './components/Card';
 import Tv from "./components/Tv";
-import MoviesHome from './components/MoviesHome';
+
 const App = ()=>{
   return (
     <div>
@@ -20,9 +20,8 @@ const App = ()=>{
         <Route path="/busqueda" element={<Busqueda/>}/>
         <Route path="buscar/:resultado" element={<ResultadoBusqueda/>}/> 
         <Route path="/" element={<Home/>} />
-        <Route path="movie/:popular/page/:numpage" element={<MoviesHome/>}/>
         <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
-        <Route path="/buscar/multi/:resultado" element={<Card/>}/>
+        <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
         <Route path="/tv" element={<Tv/>}/>
  {/* 
          {/*home --> peliculas tendencias  

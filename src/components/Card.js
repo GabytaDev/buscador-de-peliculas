@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 
-
 const Card = ({resultado, mediaType})=>{
 
-
     return (
-        <Link to={`/buscar/multi/${mediaType}`}   className="card">
+        <Link to={`/buscar/multi/${mediaType}`} className="card">
              <p className="text-detalle">
                 {resultado.title ? resultado.title : resultado.name}
             </p>
