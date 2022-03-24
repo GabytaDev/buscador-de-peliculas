@@ -21,7 +21,7 @@ const MovieDetalle = () => {
             
             <section className="container-movie">
                 <div className="content-img">
-                    <img src={`https://image.tmdb.org/t/p/w300/${peliculas.poster_path}`} alt="poster de pelicula batman"></img>
+                    <img src={`https://image.tmdb.org/t/p/w300/${peliculas.poster_path}`} alt="poster de pelicula"></img>
                 </div>
                 <article className="content-info-movie">
                     <h2 className="title-movie">{peliculas.title}</h2>
