@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { urlBase, apiKey, search, queryLenguaje,queryPagina } from "../utils/Variables";
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
+import Card from "./Card";
 import "../styles/_ResultadoBusqueda.scss"
 
 const ResultadoBusqueda = () => {
@@ -22,17 +23,10 @@ const ResultadoBusqueda = () => {
       <h2 className="titulo">Resultado de la Busqueda</h2>
       <div className="container-cards">
         {resultados.map(resultado => (
-          //agregar card que reciba media_type
-          <Link to={`/movie/${resultado.id}`} key={resultado.id} className="card">
-            
-              <p className="text-detalle">{resultado.title}</p>
-              <div className="content-img">
-                <img src={`https://image.tmdb.org/t/p/w200/${resultado.poster_path}`}
-                alt="poster de pelicula"></img>
-              </div>
-            
-            
-            </Link>
+          <Card 
+          key={resultado.id}
+          resultado={resultado}
+          mediaType={resultado.media_type}/>
         ))}
       </div>
     </div>

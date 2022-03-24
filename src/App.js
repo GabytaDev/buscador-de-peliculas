@@ -7,8 +7,9 @@ import Busqueda from "./components/Busqueda";
 import ResultadoBusqueda from "./components/ResultadoBusqueda"
 import Home from "./components/Home";
 import MovieDetalle from "./components/MovieDetalle";
+import Card from './components/Card';
 import Tv from "./components/Tv";
-import MoviesHome from './components/MoviesHome';
+
 const App = ()=>{
   return (
     <div>
@@ -17,12 +18,10 @@ const App = ()=>{
 
       <Routes>
         <Route path="/busqueda" element={<Busqueda/>}/>
-        <Route path="buscar/:resultado" element={<ResultadoBusqueda/>}/>
+        <Route path="buscar/:resultado" element={<ResultadoBusqueda/>}/> 
         <Route path="/" element={<Home/>} />
-        <Route path="movie/:popular/page/:numpage" element={<MoviesHome/>}/>
         <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
-        {/* navbar pelis --> peliculas populares */}
-        
+        <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
         <Route path="/tv" element={<Tv/>}/>
  {/* 
          {/*home --> peliculas tendencias  
@@ -50,7 +49,7 @@ const App = ()=>{
        
         {/*  desde navbar ---> tendencias 
         <Route path="/series/:trending/page/:numpage"/>
-        <Route path="/busqueda/multi/:nombreBusqueda/page/:numberpage"/>
+        
         
         <Route path="/lanzamientos" element={<Lanzamientos/>}/>
         <Route path="/:idPelicula/" element={<DetallePelicula/>}/>
@@ -67,7 +66,7 @@ const App = ()=>{
         <Route  path="/tv/:idPelicula/cast/" element={<RepartoTv/>}/>
         <Route  path="/tv/:idPelicula/similar/" element={<SimilarTv/>}/>
 
-        <Route path="/buscar" element={<Buscador/>}/>
+        
         */}
 
       </Routes>

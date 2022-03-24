@@ -4,9 +4,6 @@ export const search = "search";
 export const queryPagina = '&page=';
 export const queryLenguaje = '&language=es-ES';
 
-// export const parametrosFetch = (categoria,tipo, busqueda) =>
-// busqueda ? `${categoria}/${tipo}/${busqueda}` : `${categoria}/${tipo}` ;
-
 export const parametrosFetch = (categoria,tipo) =>
 `${categoria}/${tipo}`;
 
