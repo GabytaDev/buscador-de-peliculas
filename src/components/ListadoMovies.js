@@ -23,9 +23,9 @@ const ListadoMovies = ({titulo, peliculas})=>{
 
                                 <img src= {`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
                                  className="contenedor-imagen-listado"
-                                 alt="poster pelicula"></img>
+                                 alt={pelicula.title}></img>
 
-                                <p>{pelicula.original_title}</p>  
+                                <p>{pelicula.title}</p>  
                             </li>    
                         </ul>
                         <Flecha className="icono-flecha-detalle"/>

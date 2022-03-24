@@ -19,7 +19,7 @@ const ListadoSeries = ({titulo, peliculas}) => {
                                     ></img> */}
                                    
                                     <img src={`https://image.tmdb.org/t/p/w200/${serie.poster_path}`}
-                                     className="contenedor-imagen-listado" alt="poster serie"></img>
+                                     className="contenedor-imagen-listado" alt={serie.name}></img>
                                     <p>{serie.name}</p>
                                 </li>
                             </ul>

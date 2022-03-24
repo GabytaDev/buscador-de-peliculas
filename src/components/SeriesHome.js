@@ -3,7 +3,6 @@ import ListadoSeries from "./ListadoSeries";
 import "../styles/_ListadoMovies.scss";
 import "../styles/_MoviesHome.scss";
 
-
 const SeriesHome = () => {
     const {peliculas: series} = useFetchMovies("tv", "popular");
     const {peliculas: seriesTopRated} = useFetchMovies("tv", "top_rated");

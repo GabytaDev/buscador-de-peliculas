@@ -9,7 +9,6 @@ const useFetchMovies = (categoria,tipo)=>{
         fetch(url)
             .then(res => res.json())
             .then(data => setPeliculas(data.results))
-            console.log(peliculas)
     }, [])
     return ({peliculas})
 
