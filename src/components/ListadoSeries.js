@@ -2,6 +2,7 @@ import "../styles/_ListadoMovies.scss";
 import { Link } from "react-router-dom";
 import { IoIosArrowDroprightCircle as Flecha } from "react-icons/io";
 import { MdImageNotSupported as ImgNotfound } from "react-icons/md";
+
 const ListadoSeries = ({titulo, peliculas}) => {
 
 

@@ -4,6 +4,8 @@ export const search = "search";
 export const queryPagina = '&page=';
 export const queryLenguaje = '&language=es-ES';
 
+export const cortarArray = array => array.slice(0, 5);
+
 export const parametrosFetch = (categoria,tipo) =>
 `${categoria}/${tipo}`;
 

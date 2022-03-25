@@ -9,7 +9,7 @@ import Home from "./components/Home";
 import MovieDetalle from "./components/MovieDetalle";
 import Card from './components/Card';
 import Tv from "./components/Tv";
-
+import TvDetalle from './components/TvDetalle';
 const App = ()=>{
   return (
     <div>
@@ -23,6 +23,7 @@ const App = ()=>{
         <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
         <Route path="/tv" element={<Tv/>}/>
+        <Route path="/tv/:idTv" element={<TvDetalle/>}/>
  {/* 
          {/*home --> peliculas tendencias  
         <Route path="movie/:trending/page/:numpage" element={<TrendingMovie/>}/> 
@@ -61,7 +62,7 @@ const App = ()=>{
         <Route path="/tv/:popular/page/:numberpage" element={<tvPopular/>}/>
         <Route path="/tv/:top_rated/page/:numpage" element={<RankingTv/>}/>
         <Route path="/tv/:on_the_air/page/:numpage" element={<OnAirTv/>}/>
-        <Route path="/tv/:idPelicula/info" element={<infoTv/>}/>
+        
         <Route  path="/tv/:idPelicula/temporada/:numTemporada" element={<TemporadaTv/>}/>
         <Route  path="/tv/:idPelicula/cast/" element={<RepartoTv/>}/>
         <Route  path="/tv/:idPelicula/similar/" element={<SimilarTv/>}/>

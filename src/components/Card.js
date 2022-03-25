@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Card = ({resultado, mediaType})=>{
+const Card = ({resultado, mediaType,})=>{
 
     return (
         <Link to={`/buscar/multi/${mediaType}`} className="card">
