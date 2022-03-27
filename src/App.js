@@ -23,7 +23,7 @@ const App = ()=>{
         <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
         <Route path="/tv" element={<Tv/>}/>
-        <Route path="/tv/:idTv" element={<TvDetalle/>}/>
+        <Route path="/tv/:tvDetalle" element={<TvDetalle/>}/>
  {/* 
          {/*home --> peliculas tendencias  
         <Route path="movie/:trending/page/:numpage" element={<TrendingMovie/>}/> 
