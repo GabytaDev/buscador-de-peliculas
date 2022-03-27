@@ -7,7 +7,7 @@
   display: flex;
   color: $third-color;
   font-size: 32px;
-  padding: 20px;
+  padding-left: 20px;
  .titulo-tv{
   @include title-detalle ($fontSizeTitle: 32px);
   .flecha-ver-mas{
@@ -22,21 +22,57 @@
 
 .container-series-card{
    @include flex-centrar($direccion: row,$content: center);
-  padding: 20px;
+  
   .card{
-      display: flex;
-      text-decoration: none;  
-      @include subtitle-detalle($fontSize: 20px, $fontWeight:400);
-      color: $third-color;
-
+    display: flex;
+    text-decoration: none;  
+    @include subtitle-detalle($fontSize: 20px, $fontWeight:400);
+    color: $third-color;
       .unit-card{
-        padding: 20px;
-        
+        padding: 20px; 
       }
       
   }
   .card :hover{
     opacity: 0.8;
     color: $background-enfasis;
+  }
+}
+
+@media (min-width: 900px) and (max-width:1200px) {
+  .container-series-card{
+    .card{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width:900px) {
+  .container-series-card{
+    .card{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width:500px) and (max-width:700px){
+  .container-titulo-link{
+    font-size: 28px;
+   .titulo-tv{
+    @include title-detalle ($fontSizeTitle: 28px);
+   }
+    
+  }
+}
+
+@media (min-width: 320px) and (max-width:490px){
+  .container-titulo-link{
+    font-size: 24px;
+   .titulo-tv{
+    @include title-detalle ($fontSizeTitle: 24px);
+   }
+    
   }
 }
