@@ -1,5 +1,6 @@
 import "../styles/_TvDetalle.scss";
 import imgNotFound from "../images/imgNotFound.webp"
+import portadaNotfound from "../images/portadaNotfound.jpeg"
 import { urlBase, apiKey } from "../utils/Variables"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -25,7 +26,9 @@ const TvDetalle = () => {
 
                 <section className="container-tv">
                     <div className="content-img-tv">
+                    {series.poster_path?
                         <img src={`https://image.tmdb.org/t/p/w300${series.poster_path}`} alt={series.name}></img>
+                        : <img src={portadaNotfound}></img>}
                     </div>
                     <article className="content-info-tv">
                         <h2 className="name-tv">{series.name}</h2>
