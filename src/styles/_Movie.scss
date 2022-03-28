@@ -32,7 +32,8 @@
            @include title-detalle;
        }
        .text-detalle{
-           @include subtitle-detalle ($fontSize: 18px);
+           @include subtitle-detalle ($fontSize: 20px);
+           color: $color-text-listados;
        }
        .subtitle-movie{
            @include subtitle-detalle ($fontSize: 20px, $fontWeight:500);
