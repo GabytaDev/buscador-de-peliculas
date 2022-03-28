@@ -23,7 +23,11 @@ const App = ()=>{
         <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
         <Route path="/tv" element={<Tv/>}/>
-        <Route path="/tv/:tvDetalle" element={<TvDetalle/>}/>
+        <Route path="/tv/:idtv" element={<TvDetalle/>}/>
+        {/* ir al id de la serie fetch al id  */}
+        <Route path="/tv/:popular/page/:numberpage" element={<tvPopular/>}/>
+        {/* ir a todas las series populares */}
+        
  {/* 
          {/*home --> peliculas tendencias  
         <Route path="movie/:trending/page/:numpage" element={<TrendingMovie/>}/> 
@@ -59,7 +63,7 @@ const App = ()=>{
         {/* tv 
         {/* home--> tv tendencias 
         <Route path="tv/:trending/page/:numpage" element={<tvTendencia/>}/>
-        <Route path="/tv/:popular/page/:numberpage" element={<tvPopular/>}/>
+       
         <Route path="/tv/:top_rated/page/:numpage" element={<RankingTv/>}/>
         <Route path="/tv/:on_the_air/page/:numpage" element={<OnAirTv/>}/>
         
