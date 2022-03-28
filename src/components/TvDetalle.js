@@ -52,13 +52,9 @@ const TvDetalle = () => {
                             <h4 className="subtitle-tv">Episodios:</h4>
                             <span className="text-tv"> {series.number_of_episodes}</span>
                         </div>
-
                     </article>
                 </section>
             </div>
-
-
-
         </div>
     )
 }
