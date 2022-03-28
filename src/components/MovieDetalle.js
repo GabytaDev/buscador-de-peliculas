@@ -1,4 +1,6 @@
 import "../styles/_Movie.scss";
+import imgNotFound from "../images/imgNotFound.webp"
+import portadaNotfound from "../images/portadaNotfound.jpeg"
 import { urlBase, apiKey } from "../utils/Variables"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -17,12 +19,16 @@ const MovieDetalle = () => {
     return (
         <div>
             <div className="container-background-movie">
+             {peliculas.backdrop_path ?
                 <img src={`https://image.tmdb.org/t/p/original/${peliculas.backdrop_path}`} className="img-fondo"></img>
-
+                : <img src={imgNotFound} className="img-not-found"></img>}
+                
                 <section className="container-movie">
                     <div className="content-img">
+                    {peliculas.poster_path ?
                         <img src={`https://image.tmdb.org/t/p/w300/${peliculas.poster_path}`} alt={peliculas.title}></img>
-                    </div>
+                        : <img src={portadaNotfound}></img>}
+                        </div>
                     <article className="content-info-movie">
                         <h2 className="title-movie">{peliculas.title}</h2>
                         <h4 className="subtitle-movie">General:</h4>

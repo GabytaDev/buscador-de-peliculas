@@ -16,3 +16,14 @@
     font-weight:$fontWeight;
     margin: 0 0 5px;
 }
+
+@mixin imagen-fondo{
+    width: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    filter:brightness(0.3)
+}
+
+@mixin imagen-not-found{
+    
+}

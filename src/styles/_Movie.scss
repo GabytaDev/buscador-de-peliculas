@@ -8,12 +8,11 @@
     justify-content: center;
     align-items: center;
     
-    
     .img-fondo{
-        width: 100%;
-        background-attachment: fixed;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-        filter:brightness(0.5)
+        @include imagen-fondo;
+    }
+    .img-not-found{
+       @include imagen-not-found;
     }
 }
 .container-movie{
