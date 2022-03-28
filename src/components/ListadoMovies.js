@@ -1,5 +1,6 @@
 
 import "../styles/_ListadoMovies.scss"
+import portadaNotfound from "../images/portadaNotfound.jpeg"
 import { Link } from "react-router-dom";
 import { IoIosArrowDroprightCircle as Flecha } from "react-icons/io";
 
@@ -14,16 +15,17 @@ const ListadoMovies = ({titulo, peliculas})=>{
                     <Link  to={`/movie/${pelicula.id}`} key={pelicula.id} className="listado">
                         <ul className="listado-ul">
                             <li className="item-listado">
+                                {pelicula.poster_path ?
                                 <img src= {`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
                                  className="contenedor-imagen-listado"
                                  alt={pelicula.title}></img>
-
+                                : <img src={portadaNotfound} className="contenedor-imagen-not-found"></img>} 
                                 <p>{pelicula.title}</p>  
                             </li>    
                         </ul>
                         <Flecha className="icono-flecha-detalle"/>
                     </Link>
-                    //serie.poster_path ? Url con poster path : imagen backup
+                    
                 ))}
                 
             </div>
