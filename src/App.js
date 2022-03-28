@@ -24,9 +24,9 @@ const App = ()=>{
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
         <Route path="/tv" element={<Tv/>}/>
         <Route path="/tv/:idtv" element={<TvDetalle/>}/>
-        {/* ir al id de la serie fetch al id  */}
-        <Route path="/tv/:popular/page/:numberpage" element={<tvPopular/>}/>
-        {/* ir a todas las series populares */}
+        {/* ir al id de la serie cuando tocad la card fetch al id  */}
+        <Route path="/tv/:tvid/page/:numberpage" element={<tvPopular/>} />
+        {/* flecha ir a todas las series populares */}
         
  {/* 
          {/*home --> peliculas tendencias  
