@@ -22,13 +22,13 @@ const TvDetalle = () => {
             <div className="container-background-tv">
                 {series.backdrop_path ? 
                 <img src={`https://image.tmdb.org/t/p/original${series.backdrop_path}`} className="img-fondo-tv"/>
-                : <img src={imgNotFound} className="img-not-found"></img>}
+                :<img src={imgNotFound} className="img-not-found"></img>}
 
                 <section className="container-tv">
                     <div className="content-img-tv">
                     {series.poster_path?
                         <img src={`https://image.tmdb.org/t/p/w300${series.poster_path}`} alt={series.name}></img>
-                        : <img src={portadaNotfound}></img>}
+                        :<img src={portadaNotfound}></img>}
                     </div>
                     <article className="content-info-tv">
                         <h2 className="name-tv">{series.name}</h2>
