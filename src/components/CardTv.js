@@ -5,7 +5,7 @@ import "../styles/_Card.scss"
 const CardTv = ({ peliculas}) => {
 
     return (
-        <div className="container-series-card">
+        <div className="container-cards">
 
             {peliculas.map(serie => (
                 <Link to={`/tv/${serie.id}`} className="card" key={serie.id}>

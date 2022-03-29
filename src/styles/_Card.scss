@@ -8,7 +8,7 @@
   color: $third-color;
   font-size: 32px;
   padding-left: 20px;
- .titulo-tv{
+ .titulo-cards{
   @include title-detalle ($fontSizeTitle: 32px);
 
   .flecha-ver-mas, a{
@@ -24,7 +24,7 @@
   color: $third-color;
 }
 
-.container-series-card{
+.container-cards{
    @include flex-centrar($direccion: row,$content: center);
    flex-wrap: wrap;
   
@@ -47,7 +47,7 @@
 }
 
 @media (min-width: 900px) and (max-width:1200px) {
-  .container-series-card{
+  .container-cards{
     .card{
       flex-wrap: wrap;
       justify-content: center;
@@ -56,7 +56,7 @@
 }
 
 @media (max-width:900px) {
-  .container-series-card{
+  .container-cards{
     .card{
       flex-wrap: wrap;
       justify-content: center;
@@ -67,7 +67,7 @@
 @media (min-width:500px) and (max-width:700px){
   .container-titulo-link{
     font-size: 28px;
-   .titulo-tv{
+   .titulo-cards{
     @include title-detalle ($fontSizeTitle: 28px);
    }    
   }
@@ -76,7 +76,7 @@
 @media (min-width: 320px) and (max-width:490px){
   .container-titulo-link{
     font-size: 24px;
-   .titulo-tv{
+   .titulo-cards{
     @include title-detalle ($fontSizeTitle: 24px);
    }    
   }
