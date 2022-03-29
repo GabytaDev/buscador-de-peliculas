@@ -13,6 +13,7 @@ import TvDetalle from './components/TvDetalle';
 import TvPopular from './components/TvPopular';
 import TvRanking from './components/TvRanking';
 import TvOnAir from './components/TvOnAir';
+import Movie from './components/Movie';
 
 const App = ()=>{
   return (
@@ -26,12 +27,15 @@ const App = ()=>{
         <Route path="/" element={<Home/>} />
         <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
+
+        <Route path="/movie" element={<Movie/>}/>
+
         <Route path="/tv" element={<Tv/>}/>
         <Route path="/tv/:idtv" element={<TvDetalle/>}/>
         <Route path="/tv/popular" element={<TvPopular/>} />
         <Route path="/tv/toprated" element={<TvRanking/>} />
         <Route path="/tv/ontheair" element={<TvOnAir/>}/>
-        
+        {/* <Route path="*" element={<ErrorNoEncontrado />} /> */}
         
  {/* 
          {/*home --> peliculas tendencias  
@@ -43,7 +47,7 @@ const App = ()=>{
         <Route  path="/movie/:idPelicula/similars/" element={<SimilarMovie/>}/>
 
         {/* navbar pelis --> peliculas populares 
-        <Route path="movie/:popular/page/:numpage" element={<PopularMovie/>}/>
+        
         <Route path="/movie/:idPelicula/info" element={<infoMovie/>}/>
         <Route  path="/movie/:idPelicula/cast/" element={<RepartoMovie/>}/>
         <Route  path="/movie/:idPelicula/videos/" element={<VideoMovie/>}/>
