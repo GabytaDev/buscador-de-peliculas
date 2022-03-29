@@ -33,9 +33,15 @@
     text-decoration: none;  
     @include subtitle-detalle($fontSize: 20px, $fontWeight:400);
     color: $third-color;
+
       .unit-card{
         padding: 20px; 
+       
         .content-img{
+          max-width: 200px;
+        }
+        .text-detalle{
+          text-align: center;
           max-width: 200px;
         }
       }  
