@@ -10,6 +10,10 @@ import MovieDetalle from "./components/MovieDetalle";
 import Card from './components/Card';
 import Tv from "./components/Tv";
 import TvDetalle from './components/TvDetalle';
+import TvPopular from './components/TvPopular';
+import TvRanking from './components/TvRanking';
+import TvOnAir from './components/TvOnAir';
+
 const App = ()=>{
   return (
     <div>
@@ -24,9 +28,10 @@ const App = ()=>{
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
         <Route path="/tv" element={<Tv/>}/>
         <Route path="/tv/:idtv" element={<TvDetalle/>}/>
-        {/* ir al id de la serie cuando tocad la card fetch al id  */}
-        <Route path="/tv/:tvid/page/:numberpage" element={<tvPopular/>} />
-        {/* flecha ir a todas las series populares */}
+        <Route path="/tv/popular" element={<TvPopular/>} />
+        <Route path="/tv/toprated" element={<TvRanking/>} />
+        <Route path="/tv/ontheair" element={<TvOnAir/>}/>
+        
         
  {/* 
          {/*home --> peliculas tendencias  
@@ -65,7 +70,7 @@ const App = ()=>{
         <Route path="tv/:trending/page/:numpage" element={<tvTendencia/>}/>
        
         <Route path="/tv/:top_rated/page/:numpage" element={<RankingTv/>}/>
-        <Route path="/tv/:on_the_air/page/:numpage" element={<OnAirTv/>}/>
+        
         
         <Route  path="/tv/:idPelicula/temporada/:numTemporada" element={<TemporadaTv/>}/>
         <Route  path="/tv/:idPelicula/cast/" element={<RepartoTv/>}/>

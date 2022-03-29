@@ -11,12 +11,12 @@ const CardTv = ({ peliculas}) => {
                 <Link to={`/tv/${serie.id}`} className="card" key={serie.id}>
                     <div className="unit-card">
                         <p className="text-detalle">{serie.name}</p>
-                        <div className="content-img">
+                        <div >
                         {serie.poster_path ?
                             <img src={`https://image.tmdb.org/t/p/w200/${serie.poster_path}`}
                                 alt={serie.name}>
                             </img> 
-                            : <img src={portadaNotfound}></img>}
+                            : <img src={portadaNotfound} className="content-img"></img>}
                         </div>
                     </div>
                 </Link>
