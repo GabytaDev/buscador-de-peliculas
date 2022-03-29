@@ -10,15 +10,20 @@
   padding-left: 20px;
  .titulo-tv{
   @include title-detalle ($fontSizeTitle: 32px);
-  .flecha-ver-mas{
+
+  .flecha-ver-mas, a{
     font-size: 32px;
+    
   }
  }
   .flecha-ver-mas:hover{
     color: $background-enfasis;
   }
 }
-
+.container-titulo-link > a{
+  text-decoration: none;
+  color: $third-color;
+}
 
 .container-series-card{
    @include flex-centrar($direccion: row,$content: center);

@@ -15,7 +15,7 @@ const Tv = () => {
             <div className="container-titulo-link">
                 <h2 className="titulo-tv">Series Populares</h2>
                 <Link to={`popular`}>
-                    <FlechaVerMas className="flecha-ver-mas" />
+                    <FlechaVerMas className="flecha-ver-mas"/>
                 </Link>
             </div>
             <CardTv
