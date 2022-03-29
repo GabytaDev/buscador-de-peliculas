@@ -36,6 +36,9 @@
     color: $third-color;
       .unit-card{
         padding: 20px; 
+        .content-img{
+          max-width: 200px;
+        }
       }
       
   }

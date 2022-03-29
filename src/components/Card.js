@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import portadaNotfound from "../images/portadaNotfound.jpeg"
 
 const Card = ({resultado, mediaType,})=>{
-
-    return (
+ return (
         <Link to={`/buscar/multi/${mediaType}`} className="card">
              <p className="text-detalle">
                 {resultado.title ? resultado.title : resultado.name}
