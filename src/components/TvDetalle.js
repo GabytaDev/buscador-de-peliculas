@@ -28,7 +28,7 @@ const TvDetalle = () => {
                     <div className="content-img-tv">
                     {series.poster_path?
                         <img src={`https://image.tmdb.org/t/p/w300${series.poster_path}`} alt={series.name}></img>
-                        :<img src={portadaNotfound}></img>}
+                        :<img src={portadaNotfound} className="not-img-portada"></img>}
                     </div>
                     <article className="content-info-tv">
                         <h2 className="name-tv">{series.name}</h2>
@@ -40,7 +40,7 @@ const TvDetalle = () => {
                         <div className="text-tv">
                             <h4 className="subtitle-tv">Géneros:</h4>
                             {series?.genres?.map(genero => (
-                                <span className="text-tv">{genero.name}</span>
+                                <span className="text-tv" key={genero.id}>{genero.name}</span>
                             ))}
                         </div>
 
