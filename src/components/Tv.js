@@ -13,31 +13,31 @@ const Tv = () => {
     return (
         <div>
             <div className="container-titulo-link">
-                <h2 className="titulo-tv">Series Populares</h2>
+                <h2 className="titulo-cards">Series Populares</h2>
                 <Link to={`popular`}>
                     <FlechaVerMas className="flecha-ver-mas"/>
                 </Link>
             </div>
             <CardTv
-                peliculas={cortarArray(seriesPopulares)}
+                peliculas ={cortarArray(seriesPopulares)}
             />
             <div className="container-titulo-link">
-                <h2 className="titulo-tv">Series con mejores criticas </h2>
+                <h2 className="titulo-cards">Series con mejores criticas </h2>
                 <Link to={`toprated`}>
                     <FlechaVerMas className="flecha-ver-mas" />
                 </Link>
             </div>
             <CardTv
-                peliculas={cortarArray(seriesTopRated)}
+                peliculas ={cortarArray(seriesTopRated)}
             />
             <div className="container-titulo-link">
-                <h2 className="titulo-tv">Series al aire </h2>
+                <h2 className="titulo-cards">Series al aire </h2>
                 <Link to={`ontheair`}>
                     <FlechaVerMas className="flecha-ver-mas" />
                 </Link>
             </div>
             <CardTv
-                peliculas={cortarArray(seriesOnTheAir)}
+                peliculas ={cortarArray(seriesOnTheAir)}
             />
 
         </div>
