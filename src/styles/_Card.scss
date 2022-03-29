@@ -12,8 +12,7 @@
   @include title-detalle ($fontSizeTitle: 32px);
 
   .flecha-ver-mas, a{
-    font-size: 32px;
-    
+    font-size: 32px; 
   }
  }
   .flecha-ver-mas:hover{
@@ -39,8 +38,7 @@
         .content-img{
           max-width: 200px;
         }
-      }
-      
+      }  
   }
   .card :hover{
     opacity: 0.8;
@@ -71,8 +69,7 @@
     font-size: 28px;
    .titulo-tv{
     @include title-detalle ($fontSizeTitle: 28px);
-   }
-    
+   }    
   }
 }
 
@@ -81,7 +78,6 @@
     font-size: 24px;
    .titulo-tv{
     @include title-detalle ($fontSizeTitle: 24px);
-   }
-    
+   }    
   }
 }
