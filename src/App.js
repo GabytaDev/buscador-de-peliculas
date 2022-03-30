@@ -25,7 +25,7 @@ const App = ()=>{
         <Route path="/busqueda" element={<Busqueda/>}/>
         <Route path="buscar/:resultado" element={<ResultadoBusqueda/>}/> 
         <Route path="/" element={<Home/>} />
-        <Route path="/movie/:idPelicula" element={<MovieDetalle/>}/>
+        <Route path="movie/:idPelicula" element={<MovieDetalle/>}/>
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
 
         <Route path="/movie" element={<Movie/>}/>

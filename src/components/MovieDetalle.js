@@ -10,7 +10,7 @@ const MovieDetalle = () => {
     const [peliculas, setPeliculas] = useState([])
 
     useEffect(() => {
-        fetch(`${urlBase}/movie/${params.idPelicula}?${apiKey}&language=es-ES`)
+        fetch(`${urlBase}movie/${params.idPelicula}?${apiKey}&language=es-ES`)
             .then(res => res.json())
             .then(data => setPeliculas(data))
 
@@ -39,7 +39,7 @@ const MovieDetalle = () => {
 
                         <div className="text-detalle">
                             {peliculas.production_companies?.map(produccion => (
-                                <span key={produccion.id}>{produccion.name}, </span>
+                                <span key={produccion.id}>{produccion.name} </span>
 
                             ))}
                         </div>
@@ -47,7 +47,7 @@ const MovieDetalle = () => {
                         <h4 className="subtitle-movie">Géneros:</h4>
                         <div className="text-detalle">
                             {peliculas?.genres?.map(genero => (
-                                <span key={genero.id}>{genero.name}, </span>
+                                <span key={genero.id}>{genero.name} </span>
                             ))}
                         </div>
                     </article>

@@ -9,7 +9,7 @@ const CardMovie = ({ peliculas }) => {
                 <Link to={`/movie/${movie.id}`} className="card" key={movie.id}>
                     <div className="unit-card">
                         <p className="text-detalle">{movie.title}</p>
-                        {/* arreglar titulo */}
+                        
                         <div>
                             {movie.poster_path ?
                                 <img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
