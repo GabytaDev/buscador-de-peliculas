@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "../styles/_Card.scss";
 
 const Movie = ()=>{
-    const { peliculas: moviesPopulares } = useFetchMovies("movie", "popular");
+    const { peliculas: moviesPopulares} = useFetchMovies("movie", "popular");
     const { peliculas: moviesTopRated } = useFetchMovies("movie", "top_rated");
     const { peliculas: moviesUpcoming } = useFetchMovies("movie", "upcoming");
     const { peliculas: moviesNowPlaying } = useFetchMovies("movie", "now_playing");
@@ -20,8 +20,9 @@ const Movie = ()=>{
             </Link>
             </div>
            <CardMovie
-           peliculas={cortarArray(moviesPopulares)}/>
-
+           peliculas={cortarArray(moviesPopulares)}
+           />
+            
             <div className="container-titulo-link">
             <h2 className="titulo-cards">Peliculas con mejores criticas</h2>
             <Link to="popular">
