@@ -1,6 +1,5 @@
 import './App.scss';
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { BrowserRouter,Routes, Route  } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Busqueda from "./components/Busqueda";
@@ -14,6 +13,7 @@ import TvPopular from './components/TvPopular';
 import TvRanking from './components/TvRanking';
 import TvOnAir from './components/TvOnAir';
 import Movie from './components/Movie';
+import MoviePopular from './components/MoviePopular';
 
 const App = ()=>{
   return (
@@ -29,7 +29,8 @@ const App = ()=>{
         <Route path="/buscar/multi/:mediatype" element={<Card/>}/>
 
         <Route path="/movie" element={<Movie/>}/>
-
+        <Route path="movie/popular" element={<MoviePopular/>}/> 
+        
         <Route path="/tv" element={<Tv/>}/>
         <Route path="/tv/:idtv" element={<TvDetalle/>}/>
         <Route path="/tv/popular" element={<TvPopular/>} />
