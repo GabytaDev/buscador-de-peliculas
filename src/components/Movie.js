@@ -8,7 +8,7 @@ import "../styles/_Card.scss";
 const Movie = ()=>{
     const { peliculas: moviesPopular } = useFetchMovies("movie", "popular",1);
     const { peliculas: moviesTopRated } = useFetchMovies("movie", "top_rated",1);
-    const { peliculas: moviesUpcoming } = useFetchMovies("movie", "upcoming",1);
+    const { peliculas: moviesUpComing } = useFetchMovies("movie", "upcoming",1);
     const { peliculas: moviesNowPlaying } = useFetchMovies("movie", "now_playing",1);
     
 
@@ -40,7 +40,7 @@ const Movie = ()=>{
             </Link>
             </div>
            <CardMovie
-           peliculas={cortarArray(moviesUpcoming)}/>
+           peliculas={cortarArray(moviesUpComing)}/>
 
 <div className="container-titulo-link">
             <h2 className="titulo-cards">Peliculas en el cine</h2>

@@ -14,6 +14,9 @@ import TvRanking from './components/TvRanking';
 import TvOnAir from './components/TvOnAir';
 import Movie from './components/Movie';
 import MoviePopular from './components/MoviePopular';
+import MovieTopRated from './components/MovieTopRated';
+import MovieUpComing from './components/MovieUpComing';
+import MovieNow from './components/MovieNow';
 
 const App = ()=>{
   return (
@@ -30,7 +33,10 @@ const App = ()=>{
 
         <Route path="/movie" element={<Movie/>}/>
         <Route path="movie/popular" element={<MoviePopular/>}/> 
-        
+        <Route path="/movie/top_rated" element={<MovieTopRated/>}/>
+        <Route path="/movie/upcoming" element={<MovieUpComing/>}/>
+        <Route path="/movie/now_playing" element={<MovieNow/>}/>
+
         <Route path="/tv" element={<Tv/>}/>
         <Route path="/tv/:idtv" element={<TvDetalle/>}/>
         <Route path="/tv/popular" element={<TvPopular/>} />
