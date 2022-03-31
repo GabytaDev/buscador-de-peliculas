@@ -1,0 +1,38 @@
+@import "./mixins";
+@import "./variables";
+
+
+.content-footer{
+    background-color: $third-color;
+    padding: 20px;
+    text-align: center;
+    @include subtitle-detalle;
+    .content-icons{
+      display: flex;
+      justify-content: center; 
+     
+        .list-icons{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .list-icons > li > a{
+            margin: 0 10px;
+            cursor: pointer;
+            color:$color-text-principal;
+            text-decoration: none;
+        
+        }
+        .list-icons >li > a:hover{
+           color: $background-enfasis;
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    .content-footer{
+        padding: 20px 20px 70px; 
+        font-size: 18px;
+    }  
+}

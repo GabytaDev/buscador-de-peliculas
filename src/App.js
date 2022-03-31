@@ -17,7 +17,7 @@ import MoviePopular from './components/MoviePopular';
 import MovieTopRated from './components/MovieTopRated';
 import MovieUpComing from './components/MovieUpComing';
 import MovieNow from './components/MovieNow';
-
+import Footer from './components/Footer';
 const App = ()=>{
   return (
     <div>
@@ -91,6 +91,7 @@ const App = ()=>{
         */}
 
       </Routes>
+        <Footer/>
       </BrowserRouter>
 
     </div>

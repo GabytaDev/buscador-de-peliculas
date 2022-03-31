@@ -12,7 +12,8 @@ const Carousel = () => {
         <div className="container-carousel">
             <Slider
                 dots={true}
-                autoplay={false}    
+                autoplay={false} 
+                arrows={false}   
             >
                 {peliculas.map(imagen => (
                     <div key={imagen.id} className="container-imagen">
