@@ -8,7 +8,9 @@ const CardMovie = ({ peliculas }) => {
             {peliculas.map(movie => (
                 <Link to={`/movie/${movie.id}`} className="card" key={movie.id}>
                     <div className="unit-card">
-                        <p className="text-detalle">{movie.title}</p>
+                        <p className="text-detalle">
+                            {movie.title ? movie.title : movie.name}
+                        </p>
                         
                         <div>
                             {movie.poster_path ?
