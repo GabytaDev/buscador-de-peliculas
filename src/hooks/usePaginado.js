@@ -23,7 +23,7 @@ const usePaginado = ()=>{
         handleClickPrev: handleClickPrev,
         handleClickNext: handleClickNext,
         handleClickUltimaPagina:handleClickUltimaPagina
-        
+
     })
 }
 export default usePaginado;

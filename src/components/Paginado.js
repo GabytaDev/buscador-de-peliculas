@@ -1,7 +1,8 @@
 import "../styles/_Paginado.scss"
 
-const Paginado = ({ page: page, handleClickPrimerPagina, handleClickPrev, handleClickNext,
-    handleClickUltimaPagina, totalPages }) => {
+const Paginado = ({ handleClickPrimerPagina, handleClickPrev, handleClickNext,
+    handleClickUltimaPagina, totalPages,page }) => {
+
     return (
         <div>
             <button onClick={handleClickPrimerPagina} disabled={page === 1}>Pagina 1</button>
