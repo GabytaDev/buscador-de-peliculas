@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useFetchMovies from '../hooks/useFetchMovies';
 import usePaginado from '../hooks/usePaginado';
 import CardMovie from './CardMovie';

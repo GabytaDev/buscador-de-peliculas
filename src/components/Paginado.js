@@ -2,7 +2,7 @@ import "../styles/_Paginado.scss"
 import "../styles/_Busqueda.scss"
 const Paginado = ({ handleClickPrimerPagina, handleClickPrev, handleClickNext,
     handleClickUltimaPagina, totalPages,page }) => {
-
+        //arreglar el disabled
     return (
         <div className="content-btn-page">
             <button onClick={handleClickPrimerPagina} disabled={page === 1} className="btn-style">Pagina 1</button>
