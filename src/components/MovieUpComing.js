@@ -1,10 +1,12 @@
 import useFetchMovies from '../hooks/useFetchMovies';
+import usePaginado from '../hooks/usePaginado';
 import CardMovie from './CardMovie';
+import Paginado from './Paginado';
 import "../styles/_Card.scss";
 
 const MovieUpComing = () => {
-
-    const { peliculas: moviesUpComing } = useFetchMovies("movie", "upcoming",1);
+    const {page, handleClickPrimerPagina, handleClickPrev, handleClickNext,handleClickUltimaPagina} = usePaginado()
+    const { peliculas: moviesUpComing, totalPages } = useFetchMovies("movie", "upcoming",page);
 
     return (
         <div>
@@ -13,6 +15,14 @@ const MovieUpComing = () => {
             </div>
             <CardMovie
                 peliculas={moviesUpComing}
+            />
+            <Paginado
+                handleClickPrimerPagina={handleClickPrimerPagina}
+                handleClickPrev={handleClickPrev}
+                handleClickNext={handleClickNext}
+                handleClickUltimaPagina={handleClickUltimaPagina}
+                page={page}
+                totalPages={totalPages}
             />
         </div>
     )

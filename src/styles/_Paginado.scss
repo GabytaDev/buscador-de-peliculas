@@ -1,0 +1,11 @@
+@import "./mixins";
+@import "./variables";
+
+.content-btn-page{
+    @include flex-centrar($direccion: row, $content: center); 
+   height: 100px;
+}
+.text-paginado{
+    @include subtitle-detalle($fontSize: 20px, $fontWeight:400);
+    color: $third-color;
+}
