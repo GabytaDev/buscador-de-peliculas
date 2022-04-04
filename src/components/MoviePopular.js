@@ -8,7 +8,7 @@ import Paginado from './Paginado';
 
 const MoviePopular = () => {
     
-    const {page,handleClickPrimerPagina, handleClickPrev, handleClickNext,handleClickUltimaPagina} = usePaginado()
+    const {page, handleClickPrimerPagina, handleClickPrev, handleClickNext,handleClickUltimaPagina} = usePaginado()
     const { peliculas: moviesPopular , totalPages } = useFetchMovies("movie", "popular", page);
    
     return (
