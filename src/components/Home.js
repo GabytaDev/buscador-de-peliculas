@@ -23,6 +23,7 @@ const Home = () => {
                     <SeriesHome/>        
                 </section> 
             </div>
+            
         </div>
     )
 }

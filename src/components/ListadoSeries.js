@@ -3,13 +3,14 @@ import portadaNotfound from "../images/portadaNotfound.jpeg"
 import { Link } from "react-router-dom";
 import { IoIosArrowDroprightCircle as Flecha } from "react-icons/io";
 
-const ListadoSeries = ({titulo, peliculas}) => {
+const ListadoSeries = ({titulo, peliculas, isLoading}) => {
 
     return (
-        <div>
+        <div className="position-relative">
             <h2 className="titulo-container">{titulo}</h2>
             <div className="contenedor-listado">
-                 {peliculas.map(serie => (
+                 { !isLoading &&
+                 peliculas.map(serie => (
                         <Link to={`/tv/${serie.id}`} key={serie.id} className="listado">
                             <ul className="listado-ul">
                                 <li className="item-listado">
@@ -22,10 +23,9 @@ const ListadoSeries = ({titulo, peliculas}) => {
                             </ul>
                             <Flecha className="icono-flecha-detalle" />
                         </Link>
-                    ))}
-
-               
+                    ))} 
             </div>
+            
         </div>
     )
 }

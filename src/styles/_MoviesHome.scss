@@ -1,5 +1,9 @@
 @import "./variables";
 @import "./mixins";
+
+.position-relative{
+    position: relative;  
+}
 .container-general{
     @include flex-centrar($direccion: row, $content: center);
  

@@ -4,14 +4,14 @@ import portadaNotfound from "../images/portadaNotfound.jpeg"
 import { Link } from "react-router-dom";
 import { IoIosArrowDroprightCircle as Flecha } from "react-icons/io";
 
-
-const ListadoMovies = ({titulo, peliculas})=>{
+const ListadoMovies = ({titulo, peliculas,isLoading})=>{
     
     return (
-        <div>
+        <div className="position-relative">
             <h2 className="titulo-container">{titulo}</h2>
             <div className="contenedor-listado">
-                {peliculas.map(pelicula => (
+                {!isLoading &&
+                peliculas.map(pelicula => (
                     <Link  to={`/movie/${pelicula.id}`} key={pelicula.id} className="listado">
                         <ul className="listado-ul">
                             <li className="item-listado">
