@@ -1,4 +1,3 @@
-
 import "../styles/_ListadoMovies.scss"
 import portadaNotfound from "../images/portadaNotfound.jpeg"
 import { Link } from "react-router-dom";
