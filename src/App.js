@@ -18,6 +18,8 @@ import MovieTopRated from './components/MovieTopRated';
 import MovieUpComing from './components/MovieUpComing';
 import MovieNow from './components/MovieNow';
 import Footer from './components/Footer';
+import ErrorPage from './components/ErrorPage'
+
 const App = ()=>{
   return (
     <div>
@@ -42,7 +44,7 @@ const App = ()=>{
         <Route path="/tv/popular" element={<TvPopular/>} />
         <Route path="/tv/toprated" element={<TvRanking/>} />
         <Route path="/tv/ontheair" element={<TvOnAir/>}/>
-        {/* <Route path="*" element={<ErrorNoEncontrado />} /> */}
+        <Route path="*" element={<ErrorPage />} />
         
  {/* 
          {/*home --> peliculas tendencias  
