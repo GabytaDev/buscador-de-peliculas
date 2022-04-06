@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState} from "react";
 import "../styles/_Busqueda.scss";
+import "../styles/_Boton.scss";
 
 const Busqueda = () => {
     const navigate = useNavigate();

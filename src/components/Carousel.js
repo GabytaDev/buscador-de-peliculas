@@ -1,6 +1,7 @@
 import useFetchMovies from "../hooks/useFetchMovies";
 import "../styles/_Carousel.scss";
 import "../styles/_Busqueda.scss"; 
+import "../styles/_Boton.scss"
 import { Link } from "react-router-dom";
 import React from "react";
 import Slider from "react-slick";
