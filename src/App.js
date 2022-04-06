@@ -44,7 +44,7 @@ const App = ()=>{
         <Route path="/tv/popular" element={<TvPopular/>} />
         <Route path="/tv/toprated" element={<TvRanking/>} />
         <Route path="/tv/ontheair" element={<TvOnAir/>}/>
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage/>} />
         
  {/* 
          {/*home --> peliculas tendencias  
