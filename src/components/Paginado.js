@@ -1,5 +1,6 @@
 import "../styles/_Paginado.scss"
 import "../styles/_Busqueda.scss"
+import "../styles/_Boton.scss"
 
 const Paginado = ({ handleClickPrimerPagina, handleClickPrev, handleClickNext,
     handleClickUltimaPagina, totalPages,page }) => {

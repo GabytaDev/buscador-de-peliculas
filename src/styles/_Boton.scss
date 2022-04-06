@@ -1,0 +1,17 @@
+@import "./variables";
+
+.btn-style{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: $third-color;
+    font-weight: bold;
+    color: $color-text-principal;
+}
+.btn-style:hover{
+    background-color: $background-enfasis;
+    color: $color-text-enfasis;
+}
