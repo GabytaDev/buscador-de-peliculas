@@ -12,7 +12,8 @@
             @include title-detalle
         }
         .text{
-            @include subtitle-detalle
+            @include subtitle-detalle;
+            margin-bottom: 30px;
         }
     }
     .content-img{
