@@ -1,7 +1,28 @@
-.content-img{
+@import "./mixins";
+@import "./variables";
+
+.content{
     display: flex;
-    //arreglar tamaño
+    justify-content: space-around;
+    margin: 10px 10px;
+    .content-text{
+        @include flex-centrar;
+       color: $color-text-enfasis;
+        .title{
+            @include title-detalle
+        }
+        .text{
+            @include subtitle-detalle
+        }
+    }
+    .content-img{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 60%;
+        .img-error{
+           width: 100%;
+        }
+    }
 }
-.error-page{
-   width: 80%;
-}
+
