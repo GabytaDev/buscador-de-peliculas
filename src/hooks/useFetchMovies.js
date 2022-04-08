@@ -6,7 +6,7 @@ const useFetchMovies = (categoria, tipo, page) => {
     const [isLoading, setIsLoading] = useState(false);
     const [peliculas, setPeliculas] = useState([]);
     const [totalPages, setTotalPages] = useState(1);
-  
+    
 
     const url = `${urlBase}${parametrosFetch(categoria, tipo)}?${apiKey}${queryLenguaje}${queryPagina}${page}`;
     useEffect(() => {

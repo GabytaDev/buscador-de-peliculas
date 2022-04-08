@@ -5,7 +5,7 @@ import "../styles/_Card.scss"
 const CardMovie = ({ peliculas }) => {
     return (
         <div className="container-cards">
-            {peliculas.map(movie => (
+            {peliculas.map( movie => (
                 <Link to={`/movie/${movie.id}`} className="card" key={movie.id}>
                     <div className="unit-card">
                         <p className="text-detalle">

@@ -6,6 +6,7 @@ import Card from "./Card";
 import Paginado from './Paginado';
 import "../styles/_ResultadoBusqueda.scss"
 
+
 const ResultadoBusqueda = () => {
   const [resultados, setResultados] = useState([]);
   const params = useParams()
@@ -19,8 +20,6 @@ const ResultadoBusqueda = () => {
         setResultados(data.results)
         setTotalPages(data.total_pages);
       })
-
-
   }, [params, page])
 
   return (
@@ -33,6 +32,7 @@ const ResultadoBusqueda = () => {
             resultado={resultado}
             mediaType={resultado.media_type} />
         ))}
+      
       </div>
       <Paginado
         handleClickPrimerPagina={handleClickPrimerPagina}
