@@ -6,8 +6,9 @@ import "../styles/_MoviesHome.scss";
 import "../styles/_Loader.scss";
 
 const SeriesHome = () => {
-    const { peliculas: series, isLoading } = useFetchMovies("tv", "popular");
-    const { peliculas: seriesTopRated } = useFetchMovies("tv", "top_rated");
+    const page = (1)
+    const { peliculas: series, isLoading } = useFetchMovies("tv", "popular", page);
+    const { peliculas: seriesTopRated } = useFetchMovies("tv", "top_rated", page);
     return (
         <div>
             <Loader isLoading={isLoading} />
@@ -30,7 +31,7 @@ const SeriesHome = () => {
                 </div>
             }
         </div>
-
     )
 }
+
 export default SeriesHome;

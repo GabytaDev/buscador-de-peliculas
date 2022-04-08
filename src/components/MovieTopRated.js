@@ -5,19 +5,18 @@ import "../styles/_Card.scss";
 import Paginado from './Paginado';
 
 const MovieTopRated = () => {
-    const {page, handleClickPrimerPagina, handleClickPrev, handleClickNext,handleClickUltimaPagina} = usePaginado()
-    const { peliculas: moviesTopRated, totalPages } = useFetchMovies("movie","top_rated",page);
-    
-    
+    const { page, handleClickPrimerPagina, handleClickPrev, handleClickNext, handleClickUltimaPagina } = usePaginado()
+    const { peliculas: moviesTopRated, totalPages } = useFetchMovies("movie", "top_rated", page);
+
     return (
         <div>
             <div className='container-titulo-link'>
-            <h2 className="titulo-cards">Peliculas con mejores criticas</h2>
+                <h2 className="titulo-cards">Peliculas con mejores criticas</h2>
             </div>
             <CardMovie
                 peliculas={moviesTopRated}
             />
-              <Paginado
+            <Paginado
                 handleClickPrimerPagina={handleClickPrimerPagina}
                 handleClickPrev={handleClickPrev}
                 handleClickNext={handleClickNext}

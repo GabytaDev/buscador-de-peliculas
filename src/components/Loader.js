@@ -1,7 +1,7 @@
 import * as React from 'react';
 import "../styles/_Loader.scss"
 
-const Loader = ({isLoading})=>{
+const Loader = ({ isLoading }) => {
 
     return (
         isLoading &&
