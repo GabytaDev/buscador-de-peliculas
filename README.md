@@ -1,4 +1,5 @@
-![peliculas y series](./images/movies.jpeg)
+![peliculas y series](./src/images/movies.jpeg)
+
 # Buscador de películas y series
 ****
 Aquí puedes ver el trabajo realizado! ---> 
