@@ -22,12 +22,12 @@ Tecnología utilizadas:
 
 ****
 
-###Contenido y funcionalidades de la web
+### Contenido y funcionalidades de la web
 - Home  con carousel que muestra ,  2 listas de películas y 2 listas de series
 - Barra de navegación : Home, Películas, Series y Buscador
 - Paginado
 - Diseño responsive 
 
-### Para clonar el proyecto necesitas 
-En el directorio del proyecto, puede ejecutar
-### `npm start`
+### Para clonar el proyecto sigue estas instrucciones!
+- Descargar los archivos en tu pc 
+- Ejecutar en consola npm install
