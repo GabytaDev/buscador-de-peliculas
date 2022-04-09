@@ -18,7 +18,7 @@ const ListadoMovies = ({ titulo, peliculas, isLoading }) => {
                                         <img src={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
                                             className="contenedor-imagen-listado"
                                             alt={pelicula.title}></img>
-                                        : <img src={portadaNotfound} className="contenedor-imagen-not-found"></img>}
+                                        : <img src={portadaNotfound} className="contenedor-imagen-not-found" alt="sin imagen"></img>}
                                     <p>{pelicula.title}</p>
                                 </li>
                             </ul>

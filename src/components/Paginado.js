@@ -10,11 +10,11 @@ const Paginado = ({ handleClickPrimerPagina, handleClickPrev, handleClickNext,
             <button onClick={handleClickPrimerPagina} disabled={page === 1} className="btn-style">Pagina 1</button>
             <button onClick={handleClickPrev} disabled={page === 1} className="btn-style">Previa</button>
             <p className="text-paginado">Página {page}</p>
-            <button onClick={handleClickNext} disabled={totalPages > 500 ? page === 500 : page == totalPages}
+            <button onClick={handleClickNext} disabled={totalPages > 500 ? page === 500 : page === totalPages}
                 className="btn-style">Siguiente
             </button>
             <button onClick={() => handleClickUltimaPagina(totalPages > 500 ? 500 : totalPages)}
-                disabled={totalPages > 500 ? page === 500 : page == totalPages} className="btn-style">Ultima Pagina
+                disabled={totalPages > 500 ? page === 500 : page === totalPages} className="btn-style">Ultima Pagina
             </button>
         </div>
     )

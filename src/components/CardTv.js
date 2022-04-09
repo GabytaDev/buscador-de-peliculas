@@ -16,7 +16,7 @@ const CardTv = ({ peliculas }) => {
                                 <img src={`https://image.tmdb.org/t/p/w200/${serie.poster_path}`}
                                     alt={serie.name}>
                                 </img>
-                                : <img src={portadaNotfound} className="content-img"></img>}
+                                : <img src={portadaNotfound} className="content-img" alt="sin imagen"></img>}
                         </div>
                     </div>
                 </Link>

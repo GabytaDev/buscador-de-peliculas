@@ -17,7 +17,7 @@ const useFetchMovies = (categoria, tipo, page) => {
                 setTotalPages(data.total_pages);
                 setIsLoading(false)
             })
-    }, [page]);
+    }, [page,url]);
 
     return ({
         isLoading: isLoading,

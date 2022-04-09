@@ -13,7 +13,7 @@ const TvDetalle = () => {
         fetch(`${urlBase}tv/${params.idtv}?${apiKey}&language=es-ES`)
             .then(res => res.json())
             .then(data => setSeries(data))
-    }, [])
+    }, [params.idtv])
 
     return (
         <div>

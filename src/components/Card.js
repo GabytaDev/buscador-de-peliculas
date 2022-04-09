@@ -15,7 +15,7 @@ const Card = ({ resultado, mediaType }) => {
               <img src={`https://image.tmdb.org/t/p/w200/${resultado.poster_path}`}
                 alt={resultado.title}>
               </img>
-              : <img src={portadaNotfound} className="content-img"></img>}
+              : <img src={portadaNotfound} className="content-img"alt={resultado.title} ></img>}
           </div>
         </div>
       </Link>

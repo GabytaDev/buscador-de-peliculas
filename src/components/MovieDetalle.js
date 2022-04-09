@@ -14,20 +14,20 @@ const MovieDetalle = () => {
             .then(res => res.json())
             .then(data => setPeliculas(data))
 
-    }, [])
+    }, [params.idPelicula])
 
     return (
         <div>
             <div className="container-background-movie">
                 {peliculas.backdrop_path ?
-                    <img src={`https://image.tmdb.org/t/p/original/${peliculas.backdrop_path}`} className="img-fondo"></img>
-                    : <img src={imgNotFound} className="img-not-found"></img>}
+                    <img src={`https://image.tmdb.org/t/p/original/${peliculas.backdrop_path}`} className="img-fondo" alt={peliculas.title}></img>
+                    : <img src={imgNotFound} className="img-not-found" alt="sin imagen"></img>}
 
                 <section className="container-movie">
                     <div className="content-img">
                         {peliculas.poster_path ?
                             <img src={`https://image.tmdb.org/t/p/w300/${peliculas.poster_path}`} alt={peliculas.title}></img>
-                            : <img src={portadaNotfound}></img>}
+                            : <img src={portadaNotfound} alt="sin imagen"></img>}
                     </div>
                     <article className="content-info-movie">
                         <h2 className="title-movie">{peliculas.title}</h2>
