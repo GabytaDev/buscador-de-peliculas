@@ -18,7 +18,11 @@ Tecnología utilizadas:
 - CSS
 - SASS
 - JAVASCRITP
-- API: The Movie Data Base Api
+- API: [The Movie Data Base Api](https://developers.themoviedb.org/4/getting-started)
+
+Librerias:
+- React slick
+- React icons
 
 ****
 
@@ -30,4 +34,4 @@ Tecnología utilizadas:
 
 ### Para clonar el proyecto sigue estas instrucciones!
 - Descargar los archivos en tu pc 
-- Ejecutar en consola npm install
+- Ejecutar en consola npm start

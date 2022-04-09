@@ -10,7 +10,6 @@
   padding-left: 20px;
  .titulo-cards{
   @include title-detalle ($fontSizeTitle: 32px);
-
   .flecha-ver-mas, a{
     font-size: 32px; 
   }
@@ -27,16 +26,13 @@
 .container-cards{
    @include flex-centrar($direccion: row,$content: center);
    flex-wrap: wrap;
-  
   .card{
     display: flex;
     text-decoration: none;  
     @include subtitle-detalle($fontSize: 20px, $fontWeight:400);
     color: $third-color;
-
       .unit-card{
-        padding: 20px; 
-       
+        padding: 20px;      
         .content-img{
           max-width: 200px;
         }
