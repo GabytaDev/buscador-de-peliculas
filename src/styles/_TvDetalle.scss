@@ -16,7 +16,6 @@
     } 
 }
 
-
 .container-tv{
     @include flex-centrar($direccion: row, $content: center);
     padding: 40px;
@@ -48,29 +47,21 @@
     }
 }
 
-@media (min-width:700px) and (max-width:900px) {
+@media (max-width:900px) {
  
 .container-background-tv{
     .img-fondo-tv{
        width: auto
     }
-    .img-not-found{
-       @include imagen-not-found;
-    } 
 }
 
 .container-tv{
     display: flex;
    flex-wrap: wrap;
-    .content-img-tv{
-        .not-img-portada{
-            max-width: 300px;
-        }
-    }  
 }   
 }
 
-@media (min-width:480px) and (max-width:699px) {
+@media (max-width:700px) {
     
 .container-background-tv{
     .img-fondo-tv{
@@ -84,24 +75,102 @@
 .container-tv{
     display: flex;
    flex-wrap: wrap;
-    
     .content-info-tv{
         .name-tv{
          @include title-detalle ($fontSizeTitle: 28px);  
         }
         .text-tv{
-         @include subtitle-detalle ($fontSize: 18px);
-         
+         @include subtitle-detalle ($fontSize: 18px);        
         }
         .subtitle-tv{
          @include subtitle-detalle ($fontSize: 18px, $fontWeight:500);  
-         
         }
-     }
-   
+     }   
 }   
 }
 
-@media (min-width:320px) and (max-width:470px){
+
+
+@media (min-width:500px) and (max-width:690px){
+    .container-background-tv{
+        .img-fondo-tv{
+           width: auto
+        }
+        .img-not-found{
+           @include imagen-not-found;
+        } 
+    }
     
+    .container-tv{
+        display: flex;
+       flex-wrap: wrap;
+       width: auto;
+       padding: none;
+        .content-info-tv{
+            .name-tv{
+             @include title-detalle ($fontSizeTitle: 28px);  
+            }
+            .text-tv{
+             @include subtitle-detalle ($fontSize: 18px);        
+            }
+            .subtitle-tv{
+             @include subtitle-detalle ($fontSize: 18px, $fontWeight:500);  
+            }
+         }   
+    }     
+}
+
+@media (min-width: 320px) and (max-width:490px){
+    
+    .container-background-tv{
+        display: flex;
+        width: auto;
+        overflow: hidden;
+        background-size:cover;
+        justify-content: center;
+        align-items: center;
+        
+        
+        .img-fondo-tv{
+           @include imagen-fondo;
+           width: auto
+        }
+        .img-not-found{
+           @include imagen-not-found;
+        } 
+      
+    }
+    
+    .container-tv{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1px;
+        width: auto;
+        .content-img-tv{
+            max-width: auto;
+            max-height: auto;
+            margin: 0;  
+            .not-img-portada{
+                max-width: 300px;
+            }
+        }
+        .content-info-tv{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+           
+            .name-tv{
+             @include title-detalle ($fontSizeTitle: 20px);  
+            
+            }
+            .text-tv{
+             @include subtitle-detalle ($fontSize: 16px);  
+                  
+            }
+            .subtitle-tv{
+             @include subtitle-detalle ($fontSize: 16px, $fontWeight:500);  
+            
+            }
+         } 
+    }
 }
