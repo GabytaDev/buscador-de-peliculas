@@ -27,12 +27,12 @@
     }
     .content-info-movie{
        padding: 0 20px;
+       color:  $color-text-principal;
        .title-movie{
            @include title-detalle;
        }
        .text-detalle{
            @include subtitle-detalle ($fontSize: 20px);
-           color: $color-text-listados;
        }
        .subtitle-movie{
            @include subtitle-detalle ($fontSize: 20px, $fontWeight:500);
@@ -111,6 +111,17 @@
 }
 
 @media (min-width: 320px) and (max-width:490px) {
+    .container-background-movie{
+        
+        .img-fondo{
+            @include imagen-fondo;
+            width: auto;
+        }
+        .img-not-found{
+           @include imagen-not-found;
+           width: auto;
+        }
+    }
     .container-movie{
         color: $color-text-enfasis;
         position: absolute;
@@ -127,8 +138,21 @@
                 object-fit: contain;
             }
         }
+        
         .content-info-movie{
+            display: flex;
+            width: 100%;
             padding: 10px 20px;
-        }
+            .title-movie{
+                @include title-detalle($fontSizeTitle:20px);
+                margin: 0 0 5px;
+            }
+            .text-detalle{
+                @include subtitle-detalle ($fontSize: 18px);
+            }
+            .subtitle-movie{
+                @include subtitle-detalle ($fontSize: 18px, $fontWeight:500);
+            }
+       }
     }
 }

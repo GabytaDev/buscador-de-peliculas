@@ -8,9 +8,8 @@ const Card = ({ resultado, mediaType }) => {
       <Link to={`../${mediaType}/${resultado.id}`} className="card" key={resultado.id}>
         <div className="unit-card">
           <p className="text-detalle">
-          {resultado.title ? resultado.title : resultado.name}
+            {resultado.title ? resultado.title : resultado.name}
           </p>
-
           <div>
             {resultado.poster_path ?
               <img src={`https://image.tmdb.org/t/p/w200/${resultado.poster_path}`}
@@ -19,10 +18,8 @@ const Card = ({ resultado, mediaType }) => {
               : <img src={portadaNotfound} className="content-img"></img>}
           </div>
         </div>
-
       </Link>
     </div>
-
   )
 }
 export default Card;

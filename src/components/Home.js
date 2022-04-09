@@ -9,21 +9,19 @@ const Home = () => {
     return (
         <div>
             <section>
-                <Carousel/>
+                <Carousel />
             </section>
 
             <div className="container-general">
-                <section >
-                    <MoviesHome/>
+                <section>
+                    <MoviesHome />
                 </section>
-                
             </div>
             <div className="container-general">
                 <section>
-                    <SeriesHome/>        
-                </section> 
+                    <SeriesHome />
+                </section>
             </div>
-            
         </div>
     )
 }

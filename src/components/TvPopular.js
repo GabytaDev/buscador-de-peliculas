@@ -4,19 +4,19 @@ import CardTv from "./CardTv";
 import Paginado from './Paginado';
 import "../styles/_Card.scss";
 
-const TvPopular = ()=>{
-    const {page, handleClickPrimerPagina, handleClickPrev, handleClickNext,handleClickUltimaPagina} = usePaginado()
-    const {peliculas: seriesPopulares, totalPages} = useFetchMovies("tv", "popular", page);
-    
-    return(
+const TvPopular = () => {
+    const { page, handleClickPrimerPagina, handleClickPrev, handleClickNext, handleClickUltimaPagina } = usePaginado()
+    const { peliculas: seriesPopulares, totalPages } = useFetchMovies("tv", "popular", page);
+
+    return (
         <div>
-             <div className='container-titulo-link'>
-            <h2 className="titulo-cards">Series populares</h2>
+            <div className='container-titulo-link'>
+                <h2 className="titulo-cards">Series populares</h2>
             </div>
             <CardTv
                 peliculas={seriesPopulares}
             />
-             <Paginado
+            <Paginado
                 handleClickPrimerPagina={handleClickPrimerPagina}
                 handleClickPrev={handleClickPrev}
                 handleClickNext={handleClickNext}
@@ -24,7 +24,7 @@ const TvPopular = ()=>{
                 page={page}
                 totalPages={totalPages}
             />
-       </div>
+        </div>
     )
 }
 

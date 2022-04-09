@@ -60,6 +60,16 @@
    
 }
 
+@media (max-width:1200px){
+.container-carousel{
+    height: 70%;
+    .container-imagen{
+        height: 70%;
+
+    } 
+}  
+}
+
 @media (min-width:700px) and (max-width:900px) {
    
 .container-carousel{
@@ -86,7 +96,7 @@
 } 
 }
 
-@media (min-width:500px) and (max-width:690px){
+@media (min-width:500px) and (max-width:699px){
       
 .container-carousel{
     height: auto;
@@ -99,7 +109,6 @@
         }
         .container-info-pelicula{
             width: 220px;
-            height: auto;
             padding: 30px;
             .info-pelicula{
                 height: auto;

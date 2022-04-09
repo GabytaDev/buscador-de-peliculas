@@ -5,13 +5,13 @@ import Paginado from './Paginado';
 import "../styles/_Card.scss";
 
 const MovieUpComing = () => {
-    const {page, handleClickPrimerPagina, handleClickPrev, handleClickNext,handleClickUltimaPagina} = usePaginado()
-    const { peliculas: moviesUpComing, totalPages } = useFetchMovies("movie", "upcoming",page);
+    const { page, handleClickPrimerPagina, handleClickPrev, handleClickNext, handleClickUltimaPagina } = usePaginado()
+    const { peliculas: moviesUpComing, totalPages } = useFetchMovies("movie", "upcoming", page);
 
     return (
         <div>
             <div className='container-titulo-link'>
-            <h2 className="titulo-cards">Peliculas a estrenar</h2>
+                <h2 className="titulo-cards">Peliculas a estrenar</h2>
             </div>
             <CardMovie
                 peliculas={moviesUpComing}

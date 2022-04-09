@@ -24,7 +24,6 @@ const MoviesHome = () => {
                         />
                     </div>
                     <div className="box-container">
-
                         <ListadoMovies
                             titulo="Próximos lanzamientos"
                             categoria="movie"
@@ -36,7 +35,6 @@ const MoviesHome = () => {
                 </div>
             }
         </div>
-
     )
 }
 export default MoviesHome;

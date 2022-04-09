@@ -11,8 +11,8 @@ const ErrorPage = () => {
                 <h3 className="title">Error 404: Página no encontrada</h3>
                 <p className="text">La página que intentas buscar no se encuentra</p>
                 <Link to="/">
-                <button className="btn-style">Volver al inicio</button>
-                </Link>  
+                    <button className="btn-style">Volver al inicio</button>
+                </Link>
             </div>
             <div className="content-img">
                 <img src={page404} className="img-error" alt="pagina no encontrada"></img>

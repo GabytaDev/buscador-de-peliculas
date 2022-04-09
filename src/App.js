@@ -6,7 +6,6 @@ import Busqueda from "./components/Busqueda";
 import ResultadoBusqueda from "./components/ResultadoBusqueda"
 import Home from "./components/Home";
 import MovieDetalle from "./components/MovieDetalle";
-import Card from './components/Card';
 import Tv from "./components/Tv";
 import TvDetalle from './components/TvDetalle';
 import TvPopular from './components/TvPopular';
@@ -20,13 +19,11 @@ import MovieNow from './components/MovieNow';
 import Footer from './components/Footer';
 import ErrorPage from './components/ErrorPage'
 
-
 const App = ()=>{
   return (
     <div>
       <BrowserRouter>
       <NavBar/>
-
       <Routes>
         <Route path="/busqueda" element={<Busqueda/>}/>
         <Route path="buscar/:resultado" element={<ResultadoBusqueda/>}/> 
@@ -46,7 +43,6 @@ const App = ()=>{
       </Routes>
         <Footer/>
       </BrowserRouter>
-
     </div>
   )
 }
