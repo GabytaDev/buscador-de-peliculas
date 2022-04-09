@@ -47,3 +47,61 @@
        }
     }
 }
+
+@media (min-width:700px) and (max-width:900px) {
+ 
+.container-background-tv{
+    .img-fondo-tv{
+       width: auto
+    }
+    .img-not-found{
+       @include imagen-not-found;
+    } 
+}
+
+.container-tv{
+    display: flex;
+   flex-wrap: wrap;
+    .content-img-tv{
+        .not-img-portada{
+            max-width: 300px;
+        }
+    }  
+}   
+}
+
+@media (min-width:480px) and (max-width:699px) {
+    
+.container-background-tv{
+    .img-fondo-tv{
+       width: auto
+    }
+    .img-not-found{
+       @include imagen-not-found;
+    } 
+}
+
+.container-tv{
+    display: flex;
+   flex-wrap: wrap;
+    
+    .content-info-tv{
+        .name-tv{
+         @include title-detalle ($fontSizeTitle: 28px);  
+        }
+        .text-tv{
+         @include subtitle-detalle ($fontSize: 18px);
+         
+        }
+        .subtitle-tv{
+         @include subtitle-detalle ($fontSize: 18px, $fontWeight:500);  
+         
+        }
+     }
+   
+}   
+}
+
+@media (min-width:320px) and (max-width:470px){
+    
+}
