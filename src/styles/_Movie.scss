@@ -112,7 +112,7 @@
 
 @media (min-width: 320px) and (max-width:490px) {
     .container-background-movie{
-        
+        width: auto;
         .img-fondo{
             @include imagen-fondo;
             width: auto;
@@ -125,7 +125,7 @@
     .container-movie{
         color: $color-text-enfasis;
         position: absolute;
-        top:330px;
+        top:100px;
         flex-direction: column;
         padding: 5px;
         margin-top: 10px;

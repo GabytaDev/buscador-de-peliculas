@@ -98,6 +98,7 @@
         }
         .img-not-found{
            @include imagen-not-found;
+           width: auto;
         } 
     }
     
@@ -123,20 +124,13 @@
 @media (min-width: 320px) and (max-width:490px){
     
     .container-background-tv{
-        display: flex;
-        width: auto;
-        overflow: hidden;
-        background-size:cover;
-        justify-content: center;
-        align-items: center;
-        
-        
         .img-fondo-tv{
            @include imagen-fondo;
            width: auto
         }
         .img-not-found{
            @include imagen-not-found;
+           width: auto;
         } 
       
     }
@@ -146,6 +140,7 @@
         flex-wrap: wrap;
         padding: 1px;
         width: auto;
+        top: 100px;
         .content-img-tv{
             max-width: auto;
             max-height: auto;
