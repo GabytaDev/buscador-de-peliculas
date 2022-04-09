@@ -54,7 +54,6 @@
        width: auto
     }
 }
-
 .container-tv{
     display: flex;
    flex-wrap: wrap;
@@ -100,8 +99,7 @@
            @include imagen-not-found;
            width: auto;
         } 
-    }
-    
+    }    
     .container-tv{
         display: flex;
        flex-wrap: wrap;
@@ -117,12 +115,11 @@
             .subtitle-tv{
              @include subtitle-detalle ($fontSize: 18px, $fontWeight:500);  
             }
-         }   
+        }   
     }     
 }
 
-@media (min-width: 320px) and (max-width:490px){
-    
+@media (min-width: 320px) and (max-width:490px){   
     .container-background-tv{
         .img-fondo-tv{
            @include imagen-fondo;
@@ -131,8 +128,7 @@
         .img-not-found{
            @include imagen-not-found;
            width: auto;
-        } 
-      
+        }    
     }
     
     .container-tv{
@@ -152,19 +148,15 @@
         .content-info-tv{
             display: flex;
             justify-content: center;
-            flex-direction: column;
-           
+            flex-direction: column;          
             .name-tv{
-             @include title-detalle ($fontSizeTitle: 20px);  
-            
+             @include title-detalle ($fontSizeTitle: 20px);             
             }
             .text-tv{
-             @include subtitle-detalle ($fontSize: 16px);  
-                  
+             @include subtitle-detalle ($fontSize: 16px);                   
             }
             .subtitle-tv{
-             @include subtitle-detalle ($fontSize: 16px, $fontWeight:500);  
-            
+             @include subtitle-detalle ($fontSize: 16px, $fontWeight:500);             
             }
          } 
     }

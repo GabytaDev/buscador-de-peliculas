@@ -1,7 +1,6 @@
 @import "./mixins";
 @import "./variables";
 
-
 .content-footer{
     background-color: $third-color;
     padding: 20px;
@@ -9,8 +8,7 @@
     @include subtitle-detalle;
     .content-icons{
       display: flex;
-      justify-content: center; 
-     
+      justify-content: center;     
         .list-icons{
             display: flex;
             justify-content: space-around;
@@ -20,8 +18,7 @@
             margin: 0 10px;
             cursor: pointer;
             color:$color-text-principal;
-            text-decoration: none;
-        
+            text-decoration: none;        
         }
         .list-icons >li > a:hover{
            color: $background-enfasis;

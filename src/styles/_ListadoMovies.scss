@@ -11,15 +11,13 @@
 .contenedor-listado{
     @include flex-centrar ($direccion:column, $content:flex-start);
     padding: 10px;
-    background-color: $main-color;
-   
+    background-color: $main-color;   
     .listado{
         @include flex-centrar ($direccion: row,$content:space-between);
         text-decoration: none;
         color: $color-text-listados;
         padding: 5px;
-        width: 100%;
-        
+        width: 100%;       
         .item-listado{
             display: flex;  
         }
@@ -51,8 +49,7 @@
     .contenedor-listado{
        padding: 5px;
         .listado{
-            @include subtitle-detalle($fontSize: 16px);
-            
+            @include subtitle-detalle($fontSize: 16px);            
             .item-listado{
                 display: flex;
                 p{

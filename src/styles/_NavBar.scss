@@ -18,8 +18,7 @@
             cursor: pointer;
         }
         .navbar-link{
-            color: $color-text-secundario;
-            
+            color: $color-text-secundario;            
         }
         .navbar-link:hover{
             color: $background-enfasis;
@@ -28,8 +27,7 @@
 }
 @media (min-width: 600px) and (max-width:900px) {
     .content-nav{
-     width: 100%;
-      
+     width: 100%;     
     }  
 }
 @media (max-width:500px){
@@ -38,8 +36,7 @@
         color: $color-text-principal;
         display: flex;
         justify-content: baseline;
-        align-items: center;
-        
+        align-items: center;    
         .content-icons,ul{
             width: 100%;
             justify-content: space-around;
