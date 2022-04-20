@@ -2,7 +2,7 @@
 
 # Buscador de películas y series
 ****
-Aquí puedes ver el trabajo realizado! ---> [Buscador de peliculas y series](https://buscador-peliculas-y-series.netlify.app/tv)
+Aquí puedes ver el trabajo realizado! ---> [Buscador de peliculas y series](https://buscador-peliculas-y-series.netlify.app)
 ****
 ### Mi último trabajo práctico en [ADAITW](https://adaitw.org/)
 
