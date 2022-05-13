@@ -9,6 +9,7 @@ const TvDetalle = () => {
     const params = useParams()
     const [series, setSeries] = useState([])
 
+    // quiza vendria bien un hook para detalles
     useEffect(() => {
         fetch(`${urlBase}tv/${params.idtv}?${apiKey}&language=es-ES`)
             .then(res => res.json())
