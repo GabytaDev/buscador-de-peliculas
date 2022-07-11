@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 const MovieDetalle = () => {
     const params = useParams()
     const [peliculas, setPeliculas] = useState([])
-
+// vendria bien un hook para los detalles
     useEffect(() => {
         fetch(`${urlBase}movie/${params.idPelicula}?${apiKey}&language=es-ES`)
             .then(res => res.json())

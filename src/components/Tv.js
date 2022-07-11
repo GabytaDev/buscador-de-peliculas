@@ -14,6 +14,7 @@ const Tv = () => {
         <div>
             <div className="container-titulo-link">
                 <h2 className="titulo-cards">Series Populares</h2>
+                {/* podemos escribir <Link to="popular", no es necesaria la llave aca */}
                 <Link to={`popular`}>
                     <FlechaVerMas className="flecha-ver-mas" />
                 </Link>

@@ -20,6 +20,7 @@ const Busqueda = () => {
         <div>
             <form onSubmit={handleSubmit} className="form-submit">
                 <label>
+{/* no hace falta label si tenes aria-label */}
                     <input type="text"
                         onChange={handleChange}
                         className="input-style"
